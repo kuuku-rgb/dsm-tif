@@ -187,7 +187,13 @@ const gridMax=DATA.meta.val_max;
 document.getElementById("sub").textContent=
   `${DATA.meta.nbhds_with_tif} of ${DATA.meta.n_nbhds} recognized neighborhoods received TIF-backed development. Shading = total TIF invested; each dot is a project (size = TIF amount). Click a project or a neighborhood for detail.`;
 document.getElementById("asub").textContent=`${DATA.meta.mapped} located projects across ${DATA.meta.nbhds_with_tif} neighborhoods · ranked by TIF invested.`;
-document.getElementById("note").innerHTML="Points sit at the matched parcel centroid; 14 located projects fall outside a recognized neighborhood boundary. Neighborhood shapes: City of Des Moines. Parcel-value heat and assessed values are a current snapshot (not change over time).";
+document.getElementById("note").innerHTML=
+  `<b>Coverage.</b> Only projects whose council record gives a parcel-matchable street address can be placed: `
+  + `${DATA.meta.mapped} of ${DATA.meta.mapped + DATA.meta.unmapped} incentive projects are on this map, and `
+  + `${DATA.meta.unmapped} are not — they are described by area or intersection, or sit on assembled land. `
+  + `A further ${DATA.projects.filter(p=>!p.nbhd).length} located projects fall outside any recognized neighborhood boundary. `
+  + `Points sit at the matched parcel centroid. Neighborhood shapes: City of Des Moines. `
+  + `Parcel-value heat and assessed values are a current snapshot (not change over time).`;
 
 function resize(){ const r=cv.parentElement.getBoundingClientRect(); cv.width=r.width*dpr; cv.height=r.height*dpr; cv.style.width=r.width+"px"; cv.style.height=r.height+"px"; draw(); }
 function baseScale(){ const r=cv.getBoundingClientRect(); return Math.min(r.width/(maxx-minx),r.height/(maxy-miny))*0.94; }

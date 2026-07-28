@@ -19,7 +19,12 @@
   .wrap{ max-width:1080px; margin:0 auto; }
   .eyebrow{ font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--heat); font-weight:700; margin:0 0 5px; }
   h1{ font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:clamp(25px,4vw,36px); line-height:1.15; font-weight:600; margin:0 0 9px; text-wrap:balance; }
-  .lede{ color:var(--ink-2); max-width:74ch; margin:0 0 26px; font-size:14.5px; }
+  .lede{ color:var(--ink-2); max-width:74ch; margin:0 0 18px; font-size:14.5px; }
+  .caveat{ border:1px solid var(--line); border-left:3px solid #c98500; background:var(--card);
+    border-radius:6px; padding:13px 16px; margin:0 0 26px; max-width:80ch;
+    font-size:13.5px; line-height:1.6; color:var(--ink-2); }
+  .caveat b{ color:var(--ink); }
+  @media (prefers-color-scheme:dark){ .caveat{ border-left-color:#d99a1e; } }
   .tiles{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:9px; margin-bottom:30px; }
   .tile{ background:var(--card); border:1px solid var(--line); border-radius:8px; padding:13px 15px; }
   .tile .n{ font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:27px; font-weight:600; line-height:1.1; font-variant-numeric:tabular-nums; }
@@ -95,6 +100,7 @@
   <p class="eyebrow">City of Des Moines · Tax Increment Financing · 2016–2026</p>
   <h1>TIF investment, neighborhood by neighborhood</h1>
   <p class="lede" id="lede"></p>
+  <p class="caveat" id="caveat"></p>
 
   <div class="tiles" id="tiles"></div>
 
@@ -129,6 +135,16 @@ document.getElementById("lede").textContent =
   `Every TIF-backed development the City of Des Moines approved between ${S.windowStart.slice(0,4)} and ${S.windowEnd.slice(0,4)}, grouped by the recognized neighborhood it sits in. `
   + `${S.nbhds_with_tif} of ${S.n_nbhds} neighborhoods received investment. TIF figures are net-present-value — the city's committed, capped obligation. `
   + `Blank cells mean the figure isn't stated in the source document; nothing is estimated.`;
+
+document.getElementById("caveat").innerHTML =
+  `<b>What this page does not cover.</b> A project can only be assigned to a neighborhood if its council record `
+  + `gives a street address that matches a tax parcel. <b>${S.located} of the ${S.all_projects} incentive projects</b> `
+  + `can be placed that way; the other <b>${S.unlocated}</b> cannot — they are described by area or intersection `
+  + `("vicinity of…", "5th &amp; Park Streets"), or sit on land assembled from multiple parcels. `
+  + (S.unlocated_examples && S.unlocated_examples.length
+      ? `That includes sizeable downtown projects such as ${S.unlocated_examples.map(esc).join(" and ")}. ` : "")
+  + `A further ${S.unassigned} located projects fall outside any recognized neighborhood boundary. `
+  + `So the totals below are <b>of mappable projects only</b> and understate each neighborhood's true TIF investment.`;
 
 document.getElementById("tiles").innerHTML = [
   [S.nbhds_with_tif+" / "+S.n_nbhds, "neighborhoods with TIF"],

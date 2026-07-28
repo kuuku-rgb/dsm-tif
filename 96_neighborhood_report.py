@@ -12,6 +12,7 @@ WHTC batch rows are listed but excluded from sums (they aggregate several develo
 """
 import csv
 import json
+import re
 from collections import defaultdict
 
 from common import CFG, ROOT
@@ -21,6 +22,23 @@ INTERIM = ROOT / CFG["paths"]["interim"]
 OUT = ROOT / CFG["paths"]["outputs"]
 WEB = OUT / "web"
 TPL = ROOT / "templates" / "neighborhoods.html"
+
+
+def notable_unlocated(md, k=3):
+    """Biggest-TIF projects that have no parcel-matchable address, as named examples.
+
+    Derived from the data so the caveat's examples can never go stale.
+    """
+    placed = {p.get("name") for p in md["projects"]}
+    allp = [p for p in json.loads((INTERIM / "projects.json").read_text(encoding="utf-8"))
+            if p["incentive_related"] and p.get("project_name") not in placed]
+    allp.sort(key=lambda p: -(p.get("tif_amount_usd") or 0))
+    out = []
+    for p in allp[:k]:
+        n = re.sub(r"\s*[-(].*$", "", p.get("project_name") or "").strip()
+        if n:
+            out.append(n[:44])
+    return out
 
 
 def build():
@@ -53,6 +71,11 @@ def build():
         "n_nbhds": md["meta"]["n_nbhds"], "nbhds_with_tif": len(nbs),
         "mapped": sum(n["n"] for n in nbs),
         "unassigned": md["meta"]["mapped"] - sum(len(v) for v in by_nb.values()),
+        # coverage: neighborhood rollups only cover parcel-matchable projects
+        "located": md["meta"]["mapped"],
+        "unlocated": md["meta"]["unmapped"],
+        "all_projects": md["meta"]["mapped"] + md["meta"]["unmapped"],
+        "unlocated_examples": notable_unlocated(md),
         "tif_total": sum(n["tif"] for n in nbs),
         "cost_total": sum(n["cost"] for n in nbs),
         "gain_total": sum(n["netGain"] for n in nbs),
