@@ -1,0 +1,203 @@
+<title>Des Moines TIF — Neighborhood Breakdown, 2016–2026</title>
+<style>
+  :root{
+    --surface:#faf8f3; --card:#fff; --ink:#211f1a; --ink-2:#57544c; --ink-3:#8c8880;
+    --line:#e7e4db; --line-soft:#f2efe7; --heat:#e4531c; --heat-2:#c84918; --heat-bg:#fbe9df;
+    --flora:#134937; --flora-bg:#e2eee7; --warn:#c98500; --warn-bg:#fbeed6;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --surface:#17160f; --card:#201e18; --ink:#f5f2e9; --ink-2:#c6c2b4; --ink-3:#8c887c;
+      --line:#332f25; --line-soft:#26231b; --heat:#ef6a38; --heat-2:#e4531c; --heat-bg:#3a2114;
+      --flora:#7fce93; --flora-bg:#1d3323; --warn:#e0a52a; --warn-bg:#3a2e10; }
+  }
+  :root[data-theme="dark"]{ --surface:#17160f; --card:#201e18; --ink:#f5f2e9; --ink-2:#c6c2b4; --ink-3:#8c887c;
+      --line:#332f25; --line-soft:#26231b; --heat:#ef6a38; --heat-2:#e4531c; --heat-bg:#3a2114; --flora:#7fce93; --flora-bg:#1d3323; --warn:#e0a52a; --warn-bg:#3a2e10; }
+  :root[data-theme="light"]{ --surface:#faf8f3; --card:#fff; --ink:#211f1a; --ink-2:#57544c; --ink-3:#8c8880;
+      --line:#e7e4db; --line-soft:#f2efe7; --heat:#e4531c; --heat-2:#c84918; --heat-bg:#fbe9df; --flora:#134937; --flora-bg:#e2eee7; --warn:#c98500; --warn-bg:#fbeed6; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--surface); color:var(--ink); font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; padding:32px 22px 70px; }
+  .wrap{ max-width:1080px; margin:0 auto; }
+  .eyebrow{ font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--heat); font-weight:700; margin:0 0 5px; }
+  h1{ font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:clamp(25px,4vw,36px); line-height:1.15; font-weight:600; margin:0 0 9px; text-wrap:balance; }
+  .lede{ color:var(--ink-2); max-width:74ch; margin:0 0 26px; font-size:14.5px; }
+  .tiles{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:9px; margin-bottom:30px; }
+  .tile{ background:var(--card); border:1px solid var(--line); border-radius:8px; padding:13px 15px; }
+  .tile .n{ font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:27px; font-weight:600; line-height:1.1; font-variant-numeric:tabular-nums; }
+  .tile .l{ font-size:12px; color:var(--ink-2); margin-top:3px; }
+  h2{ font-size:13px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); font-weight:700; margin:34px 0 10px; }
+  .sum{ background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  table{ border-collapse:collapse; width:100%; font-size:13.5px; }
+  thead th{ text-align:left; font-size:10.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3);
+    font-weight:700; padding:9px 11px; border-bottom:1px solid var(--line); white-space:nowrap; background:var(--card); }
+  thead th.n{ text-align:right; }
+  tbody td{ padding:8px 11px; border-bottom:1px solid var(--line-soft); vertical-align:top; }
+  tbody tr:last-child td{ border-bottom:none; }
+  td.n{ text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  tbody tr:hover{ background:var(--line-soft); }
+  .rank{ color:var(--ink-3); font-variant-numeric:tabular-nums; }
+  .nm{ font-weight:600; }
+  .nm a{ color:inherit; text-decoration:none; }
+  .nm a:hover{ color:var(--heat); }
+  .barcell{ min-width:110px; }
+  .bar{ height:5px; background:var(--line-soft); border-radius:3px; overflow:hidden; }
+  .bar i{ display:block; height:100%; background:linear-gradient(90deg,var(--heat),var(--heat-2)); }
+  .nbhd{ background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px 19px; margin-bottom:14px; scroll-margin-top:14px; }
+  .nbhd h3{ font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:19px; margin:0 0 3px; }
+  .nbhd .sub{ color:var(--ink-3); font-size:12px; margin-bottom:13px; }
+  .stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(104px,1fr)); gap:8px; margin-bottom:14px; }
+  .stat{ background:var(--surface); border:1px solid var(--line); border-radius:7px; padding:8px 10px; }
+  .stat .v{ font-weight:700; font-size:15px; font-variant-numeric:tabular-nums; }
+  .stat .k{ font-size:10.5px; color:var(--ink-3); margin-top:1px; }
+  .chip{ display:inline-block; font-size:10px; font-weight:700; padding:1px 7px; border-radius:999px; white-space:nowrap; }
+  .chip.built{ background:var(--flora-bg); color:var(--flora); }
+  .chip.appr{ background:var(--line-soft); color:var(--ink-2); }
+  .chip.warn{ background:var(--warn-bg); color:var(--warn); }
+  .chip.type{ background:var(--heat-bg); color:var(--heat-2); }
+  a.src{ color:var(--heat); text-decoration:none; font-size:12px; white-space:nowrap; font-weight:600; }
+  a.src:hover{ text-decoration:underline; }
+  .null{ color:var(--ink-3); }
+  .scroll{ overflow-x:auto; }
+  .foot{ margin-top:26px; font-size:12px; color:var(--ink-2); max-width:82ch; line-height:1.6; }
+  .foot b{ color:var(--ink); }
+  .toc{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; }
+  .toc a{ font-size:11.5px; padding:3px 9px; border:1px solid var(--line); border-radius:999px; color:var(--ink-2); text-decoration:none; background:var(--card); }
+  .toc a:hover{ border-color:var(--heat); color:var(--heat); }
+
+  /* ---- phones: every table becomes one card per row ---- */
+  @media (max-width:760px){
+    body{ padding:22px 13px 50px; }
+    .lede{ font-size:14px; }
+    .tiles{ grid-template-columns:1fr 1fr; gap:7px; }
+    .tile{ padding:11px 12px; } .tile .n{ font-size:22px; }
+    .nbhd{ padding:14px 13px; }
+    .stats{ grid-template-columns:1fr 1fr; }
+    .scroll{ overflow:visible; }
+    .sum{ background:none; border:none; border-radius:0; }
+    table{ font-size:13px; }
+    thead{ display:none; }
+    tbody, tbody tr, tbody td{ display:block; }
+    tbody tr{ background:var(--card); border:1px solid var(--line); border-radius:8px;
+      padding:9px 11px; margin-bottom:8px; }
+    tbody tr:hover{ background:var(--card); }
+    tbody td{ border:none !important; padding:3px 0; display:flex; gap:12px;
+      align-items:baseline; justify-content:space-between; text-align:right; }
+    tbody td::before{ content:attr(data-label); flex:none; text-align:left; color:var(--ink-3);
+      font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; }
+    /* lead each card with the name; drop the rank + bar chrome */
+    tbody td[data-label="Neighborhood"], tbody td[data-label="Project"]{
+      display:block; text-align:left; font-size:14.5px; padding-bottom:6px; }
+    tbody td[data-label="Neighborhood"]::before, tbody td[data-label="Project"]::before{ display:none; }
+    tbody td[data-label="#"], tbody td[data-label="Share of TIF"]{ display:none; }
+  }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">City of Des Moines · Tax Increment Financing · 2016–2026</p>
+  <h1>TIF investment, neighborhood by neighborhood</h1>
+  <p class="lede" id="lede"></p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <h2>All neighborhoods with TIF investment</h2>
+  <div class="sum scroll">
+    <table id="sumtbl">
+      <thead><tr>
+        <th>#</th><th>Neighborhood</th><th class="n">Projects</th><th class="n">TIF (NPV)</th>
+        <th class="n">Project cost</th><th class="n">TIF % of cost</th><th class="n">Net public gain</th>
+        <th class="n">Assessed value</th><th class="n">Built</th><th class="barcell">Share of TIF</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>Detail by neighborhood</h2>
+  <div class="toc" id="toc"></div>
+  <div id="detail"></div>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script>
+const DATA = __DATA__;
+const fmtM=v=>!v?"—":(Math.abs(v)>=1e6?"$"+(v/1e6).toFixed(v>=1e7?0:1)+"M":Math.abs(v)>=1e3?"$"+Math.round(v/1e3)+"K":"$"+Math.round(v));
+const fmtF=v=>v==null?'<span class="null">—</span>':"$"+Math.round(v).toLocaleString();
+const esc=s=>(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const S=DATA.stats, NB=DATA.neighborhoods;
+
+document.getElementById("lede").textContent =
+  `Every TIF-backed development the City of Des Moines approved between ${S.windowStart.slice(0,4)} and ${S.windowEnd.slice(0,4)}, grouped by the recognized neighborhood it sits in. `
+  + `${S.nbhds_with_tif} of ${S.n_nbhds} neighborhoods received investment. TIF figures are net-present-value — the city's committed, capped obligation. `
+  + `Blank cells mean the figure isn't stated in the source document; nothing is estimated.`;
+
+document.getElementById("tiles").innerHTML = [
+  [S.nbhds_with_tif+" / "+S.n_nbhds, "neighborhoods with TIF"],
+  [S.mapped, "projects located"],
+  [fmtM(S.tif_total), "TIF invested (NPV)"],
+  [fmtM(S.cost_total), "total project cost"],
+  [fmtM(S.gain_total), "projected net public gain"],
+  [S.built_total, "confirmed built"],
+].map(t=>`<div class="tile"><div class="n">${t[0]}</div><div class="l">${t[1]}</div></div>`).join("");
+
+// summary table
+const maxTif = Math.max(...NB.map(n=>n.tif), 1);
+document.querySelector("#sumtbl tbody").innerHTML = NB.map((n,i)=>{
+  const pct = n.tif && n.cost ? (100*n.tif/n.cost).toFixed(1)+"%" : '<span class="null">—</span>';
+  return `<tr>
+    <td data-label="#" class="rank">${i+1}</td>
+    <td data-label="Neighborhood" class="nm"><a href="#${slug(n.name)}">${esc(n.name)}</a></td>
+    <td data-label="Projects" class="n">${n.n}</td><td data-label="TIF (NPV)" class="n">${fmtF(n.tif)}</td><td data-label="Project cost" class="n">${fmtF(n.cost)}</td>
+    <td data-label="TIF % of cost" class="n">${pct}</td><td data-label="Net public gain" class="n">${fmtF(n.netGain)}</td><td data-label="Assessed value" class="n">${fmtF(n.realized)}</td>
+    <td data-label="Built" class="n">${n.built||0}</td>
+    <td data-label="Share of TIF" class="barcell"><div class="bar"><i style="width:${Math.max(3,100*n.tif/maxTif)}%"></i></div></td>
+  </tr>`;
+}).join("");
+
+// jump links
+document.getElementById("toc").innerHTML = NB.map(n=>`<a href="#${slug(n.name)}">${esc(n.name)}</a>`).join("");
+
+// per-neighborhood detail
+document.getElementById("detail").innerHTML = NB.map(n=>{
+  const rows = n.projects.map(p=>`<tr>
+      <td data-label="Project" class="nm">${esc(p.name)}${p.batch?' <span class="chip warn">batch</span>':''}</td>
+      <td data-label="Developer">${esc(p.dev)||'<span class="null">—</span>'}</td>
+      <td data-label="Type"><span class="chip type">${esc(p.type)}</span></td>
+      <td data-label="TIF (NPV)" class="n">${fmtF(p.tif)}</td>
+      <td data-label="Cost" class="n">${fmtF(p.cost)}</td>
+      <td data-label="TIF %" class="n">${p.pct!=null?p.pct.toFixed(1)+"%":'<span class="null">—</span>'}</td>
+      <td data-label="Net gain" class="n">${fmtF(p.netGain)}</td>
+      <td data-label="Assessed" class="n">${fmtF(p.realized)}</td>
+      <td data-label="Status">${p.status==="completed"?'<span class="chip built">built</span>':'<span class="chip appr">approved</span>'}</td>
+      <td data-label="Action date" class="n">${p.date||''}</td>
+      <td data-label="Source">${p.url?`<a class="src" href="${p.url}" target="_blank" rel="noopener">PDF ↗</a>`:''}</td>
+    </tr>`).join("");
+  const pct = n.tif && n.cost ? (100*n.tif/n.cost).toFixed(1)+"%" : "—";
+  return `<section class="nbhd" id="${slug(n.name)}">
+    <h3>${esc(n.name)}</h3>
+    <div class="sub">${n.n} TIF project${n.n>1?'s':''}${n.districts.length?' · '+esc(n.districts.join(", ")):''}</div>
+    <div class="stats">
+      <div class="stat"><div class="v">${fmtM(n.tif)}</div><div class="k">TIF (NPV)</div></div>
+      <div class="stat"><div class="v">${fmtM(n.cost)}</div><div class="k">Project cost</div></div>
+      <div class="stat"><div class="v">${pct}</div><div class="k">TIF % of cost</div></div>
+      <div class="stat"><div class="v">${fmtM(n.netGain)}</div><div class="k">Net public gain</div></div>
+      <div class="stat"><div class="v">${fmtM(n.realized)}</div><div class="k">Assessed value</div></div>
+      <div class="stat"><div class="v">${n.built||0} / ${n.n}</div><div class="k">Built</div></div>
+    </div>
+    <div class="scroll"><table>
+      <thead><tr><th>Project</th><th>Developer / owner</th><th>Type</th><th class="n">TIF (NPV)</th>
+        <th class="n">Cost</th><th class="n">TIF %</th><th class="n">Net gain</th><th class="n">Assessed</th>
+        <th>Status</th><th class="n">Action date</th><th>Source</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+  </section>`;
+}).join("");
+
+document.getElementById("foot").innerHTML =
+  `<b>How to read this.</b> Projects are assigned to a neighborhood by locating the matched assessor parcel inside the City's recognized `
+  + `neighborhood boundaries; ${S.unassigned} located projects fall outside any recognized neighborhood and are not listed here. `
+  + `TIF is the net-present-value figure the city commits to (not the larger undiscounted cash-basis sum). `
+  + `“Net public gain” is the staff-projected net taxes to all taxing bodies — schools, county, city, transit — after the incentive is paid, versus leaving the site as-is. `
+  + `“Assessed value” is the current Polk County assessed value of the matched parcels (a snapshot, not change over time). `
+  + `“Built” means a certificate of completion was issued — a floor, since completions of pre-${S.windowStart.slice(0,4)} agreements aren't counted. `
+  + `Sources: City of Des Moines council agendas, minutes and staff communications (councildocs.dsm.city); Polk County Assessor; Iowa Dept. of Management.`;
+</script>

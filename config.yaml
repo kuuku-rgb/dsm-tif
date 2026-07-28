@@ -1,0 +1,97 @@
+# Des Moines City Council developer agreement / TIF harvest
+window:
+  start: "2016-07-01"
+  end: "2026-07-14"
+
+base_url: "https://councildocs.dsm.city"
+user_agent: "dsm-dev-agreements-research/0.1 (kuuku@ntontan.com; public records research)"
+download_delay_seconds: 1.5
+
+# NTONTAN brand palette (from brandingcolorguidentontan.pdf).
+# Base hexes: MORTAR #1f1f1f · SOIL #3b671b · FLORA #134937 · HEAT #e4531c.
+# HEAT is the data/accent hue (validated >=3:1 on both surfaces). Dark steps are
+# lightened for legibility on the dark surface. Warn stays amber (no brand yellow).
+brand:
+  light:
+    surface: "#fcfcfb"
+    card: "#ffffff"
+    ink: "#1f1f1f"        # MORTAR
+    ink2: "#55534d"
+    ink3: "#8a8880"
+    line: "#e7e6e1"
+    line_soft: "#f1efe9"
+    data: "#e4531c"       # HEAT
+    data_soft: "#f7d9cb"
+    warn: "#c98500"
+    warn_ink: "#7a4b00"
+    warn_bg: "#fbedd7"
+    good_ink: "#134937"   # FLORA
+    good_bg: "#dcebe2"
+  dark:
+    surface: "#1a1a19"
+    card: "#232320"
+    ink: "#ffffff"
+    ink2: "#c6c3b7"
+    ink3: "#8f8d81"
+    line: "#34332e"
+    line_soft: "#2a2925"
+    data: "#ef6a38"       # HEAT, brightened for dark surface
+    data_soft: "#4a2417"
+    warn: "#d99a1e"
+    warn_ink: "#f0c069"
+    warn_bg: "#3a2e10"
+    good_ink: "#86c896"   # SOIL/FLORA lightened for dark
+    good_bg: "#1e3326"
+
+# Polk County assessor sources (user-supplied). DBF = full county roll (primary
+# value source); CSV = commercial/TIF subset (kept for its tif_descr district tag).
+polk_assessor_dbf: "C:/Users/kuuku/OneDrive/Desktop/QCT/AllPolk.dbf"
+polk_assessor_csv: "C:/Users/kuuku/OneDrive/Desktop/QCT/POLKCOUNTY - POLKCOUNTY.csv"
+# Des Moines neighborhood boundaries (Polygon shapefile, same State Plane CRS)
+neighborhoods_shp: "C:/Users/kuuku/AppData/Local/Temp/claude/C--Users-kuuku-OneDrive-Desktop-R-Projects-mgo-r-starter-with-templates-mgo-r-raw-City-Awards/5a972635-e8fa-40aa-9f02-794aaa314dfa/scratchpad/nbhd/Neighborhoods.shp"
+
+paths:
+  raw: "data/raw"
+  external: "data/external"
+  text: "data/text"
+  interim: "data/interim"
+  outputs: "data/outputs"
+
+meeting_types:
+  regular:
+    agenda_prefix: "ag"
+    minutes_prefix: "as"
+  # second pass (not v1):
+  # housing:
+  #   agenda_prefix: "mg"
+  #   minutes_prefix: "ms"
+
+# Screening taxonomy (case-insensitive regex fragments).
+# tier1 -> full structured extraction; tier2 -> Actions_long log only.
+keywords:
+  tier1:
+    - "development agreement"
+    - "amend\\w*\\s+(?:to\\s+)?(?:the\\s+)?development agreement"
+    - "minimum assessment agreement"
+    - "purchase and sale"
+    - "disposition and development"
+    - "tax increment"
+    - "\\bTIF\\b"
+    - "urban renewal development"
+    - "chapter 403"
+    - "economic development grant"
+    - "forgivable loan"
+    - "grant not to exceed"
+    - "land (?:conveyance|write-down|sale)"
+    - "workforce housing tax credit"
+    - "brownfield"
+  tier2:
+    - "urban renewal"
+    - "tax abatement"
+    - "tax exemption"
+    - "revenue bond"
+    - "G\\.?O\\.? bond"
+    - "fee waiver"
+    - "LIHTC"
+    - "low-income housing"
+    - "municipal housing"

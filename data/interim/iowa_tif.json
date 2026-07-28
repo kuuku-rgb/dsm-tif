@@ -1,0 +1,1208 @@
+{
+ "meta": {
+  "source": "Iowa Dept. of Management / Iowa Data Hub datasets 779 & 1002",
+  "city": "DES MOINES",
+  "fy_range": [
+   2012,
+   2024
+  ],
+  "total_tif_revenue": 429242842,
+  "total_rebated_to_developers": 211459973,
+  "total_named_developer_rebates": 165288040,
+  "note": "Actuals lag approvals; FY2012-2024. Rebates flow years after a project completes, so recent (2020s) approvals show little or no actual rebate yet."
+ },
+ "annual": [
+  {
+   "fy": 2012,
+   "areas": 13,
+   "tif_revenue": 24581589,
+   "rebated_to_developers": 10324395,
+   "non_rebate_spend": 17564734,
+   "ending_balance": -1850968
+  },
+  {
+   "fy": 2013,
+   "areas": 12,
+   "tif_revenue": 28769676,
+   "rebated_to_developers": 14492156,
+   "non_rebate_spend": 22283529,
+   "ending_balance": -7494284
+  },
+  {
+   "fy": 2014,
+   "areas": 10,
+   "tif_revenue": 28244375,
+   "rebated_to_developers": 12633628,
+   "non_rebate_spend": 21718662,
+   "ending_balance": -6272654
+  },
+  {
+   "fy": 2015,
+   "areas": 11,
+   "tif_revenue": 26126301,
+   "rebated_to_developers": 12166862,
+   "non_rebate_spend": 19280350,
+   "ending_balance": -5418396
+  },
+  {
+   "fy": 2016,
+   "areas": 12,
+   "tif_revenue": 27913474,
+   "rebated_to_developers": 14431192,
+   "non_rebate_spend": 19946916,
+   "ending_balance": -5454830
+  },
+  {
+   "fy": 2017,
+   "areas": 12,
+   "tif_revenue": 27617230,
+   "rebated_to_developers": 14305950,
+   "non_rebate_spend": 21100457,
+   "ending_balance": -4943745
+  },
+  {
+   "fy": 2018,
+   "areas": 13,
+   "tif_revenue": 30559627,
+   "rebated_to_developers": 15766081,
+   "non_rebate_spend": 29987388,
+   "ending_balance": -12236172
+  },
+  {
+   "fy": 2019,
+   "areas": 14,
+   "tif_revenue": 35849237,
+   "rebated_to_developers": 17130949,
+   "non_rebate_spend": 15360820,
+   "ending_balance": 15266769
+  },
+  {
+   "fy": 2020,
+   "areas": 15,
+   "tif_revenue": 34480203,
+   "rebated_to_developers": 20654045,
+   "non_rebate_spend": 13552592,
+   "ending_balance": 16593666
+  },
+  {
+   "fy": 2021,
+   "areas": 15,
+   "tif_revenue": 45272818,
+   "rebated_to_developers": 23211591,
+   "non_rebate_spend": 17828107,
+   "ending_balance": 21467994
+  },
+  {
+   "fy": 2022,
+   "areas": 18,
+   "tif_revenue": 36779213,
+   "rebated_to_developers": 22666300,
+   "non_rebate_spend": 22718759,
+   "ending_balance": 9056408
+  },
+  {
+   "fy": 2023,
+   "areas": 21,
+   "tif_revenue": 41665284,
+   "rebated_to_developers": 18942588,
+   "non_rebate_spend": 20281357,
+   "ending_balance": 12721501
+  },
+  {
+   "fy": 2024,
+   "areas": 21,
+   "tif_revenue": 41383815,
+   "rebated_to_developers": 14734236,
+   "non_rebate_spend": 22894755,
+   "ending_balance": 21991722
+  }
+ ],
+ "recipients": [
+  {
+   "recipient": "Nationwide Mutual Insurance Company",
+   "actual_rebate_paid": 21862816,
+   "payments": 21,
+   "fy_first": 2013,
+   "fy_last": 2024,
+   "projects": [
+    "Expansion of existing office building, new office building a",
+    "Nationwide/ Allied I  1100 Locust St.",
+    "Nationwide/ Allied II  1200 Locust St",
+    "New office building and parking strucure"
+   ]
+  },
+  {
+   "recipient": "Wellmark",
+   "actual_rebate_paid": 16637246,
+   "payments": 11,
+   "fy_first": 2013,
+   "fy_last": 2023,
+   "projects": [
+    "Two major new bldgs. as corporate headquarters",
+    "Wellmark Corporate Campus"
+   ]
+  },
+  {
+   "recipient": "Wells Fargo Financial",
+   "actual_rebate_paid": 15023141,
+   "payments": 21,
+   "fy_first": 2013,
+   "fy_last": 2023,
+   "projects": [
+    "New office building and parking structure",
+    "Wells Fargo I    800 Walnut St.",
+    "Wells Fargo II  801 Walnut",
+    "Wells Fargo II  expansion"
+   ]
+  },
+  {
+   "recipient": "Principal Life Insurance Company",
+   "actual_rebate_paid": 12847917,
+   "payments": 8,
+   "fy_first": 2017,
+   "fy_last": 2024,
+   "projects": [
+    "711 High, 801 Grand, 750 Park"
+   ]
+  },
+  {
+   "recipient": "Davis Brown",
+   "actual_rebate_paid": 12444509,
+   "payments": 12,
+   "fy_first": 2013,
+   "fy_last": 2024,
+   "projects": [
+    "Davis Brown Tower 215 10th St.",
+    "New building with retail, office and parking components"
+   ]
+  },
+  {
+   "recipient": "Kum & Go",
+   "actual_rebate_paid": 8866285,
+   "payments": 4,
+   "fy_first": 2021,
+   "fy_last": 2024,
+   "projects": [
+    "1459 Grand Ave"
+   ]
+  },
+  {
+   "recipient": "Waterfront Lodging",
+   "actual_rebate_paid": 4153806,
+   "payments": 11,
+   "fy_first": 2014,
+   "fy_last": 2024,
+   "projects": [
+    "Waterfront Lodging"
+   ]
+  },
+  {
+   "recipient": "Merle Hay Mall",
+   "actual_rebate_paid": 4105853,
+   "payments": 12,
+   "fy_first": 2013,
+   "fy_last": 2024,
+   "projects": [
+    "Financial assistance required to undertake $14+million in im",
+    "Merle Hay Mall   3850 Merle Hay Rd."
+   ]
+  },
+  {
+   "recipient": "Sherman and Associates",
+   "actual_rebate_paid": 3400000,
+   "payments": 8,
+   "fy_first": 2016,
+   "fy_last": 2024,
+   "projects": [
+    "202 4th Street"
+   ]
+  },
+  {
+   "recipient": "Hy-Vee",
+   "actual_rebate_paid": 3322749,
+   "payments": 18,
+   "fy_first": 2013,
+   "fy_last": 2024,
+   "projects": [
+    "420 Court Ave",
+    "Hy-Vee",
+    "Redevelopment and expansion  of retail",
+    "Redevelopment and expansion of retail"
+   ]
+  },
+  {
+   "recipient": "Liberty Bldg Devlopment Group LLC",
+   "actual_rebate_paid": 2903815,
+   "payments": 11,
+   "fy_first": 2013,
+   "fy_last": 2023,
+   "projects": [
+    "Liberty/Equitable Parking Garage",
+    "Shared structured parking for new residential development"
+   ]
+  },
+  {
+   "recipient": "The Macerich Partnership LP",
+   "actual_rebate_paid": 2659064,
+   "payments": 8,
+   "fy_first": 2017,
+   "fy_last": 2024,
+   "projects": [
+    "Redevelopment of regional retail center (Southridge Mall)"
+   ]
+  },
+  {
+   "recipient": "PDM PRECAST INC",
+   "actual_rebate_paid": 2589517,
+   "payments": 7,
+   "fy_first": 2018,
+   "fy_last": 2024,
+   "projects": [
+    "220 SE 6th Street"
+   ]
+  },
+  {
+   "recipient": "Electro Management",
+   "actual_rebate_paid": 2442605,
+   "payments": 5,
+   "fy_first": 2020,
+   "fy_last": 2024,
+   "projects": [
+    "Relocation, expansion and job retention"
+   ]
+  },
+  {
+   "recipient": "Gray's Station",
+   "actual_rebate_paid": 2402909,
+   "payments": 6,
+   "fy_first": 2019,
+   "fy_last": 2024,
+   "projects": [
+    "Gray's Station Construction"
+   ]
+  },
+  {
+   "recipient": "Des Moines Botanical Center",
+   "actual_rebate_paid": 2300000,
+   "payments": 10,
+   "fy_first": 2014,
+   "fy_last": 2023,
+   "projects": [
+    "Botanical Center"
+   ]
+  },
+  {
+   "recipient": "201 LLC",
+   "actual_rebate_paid": 2283766,
+   "payments": 7,
+   "fy_first": 2018,
+   "fy_last": 2024,
+   "projects": [
+    "201 E Locust Street"
+   ]
+  },
+  {
+   "recipient": "American Republic Insurance Company",
+   "actual_rebate_paid": 2181872,
+   "payments": 8,
+   "fy_first": 2017,
+   "fy_last": 2024,
+   "projects": [
+    "601 6th Ave"
+   ]
+  },
+  {
+   "recipient": "Merle Hay Investors",
+   "actual_rebate_paid": 2015612,
+   "payments": 10,
+   "fy_first": 2019,
+   "fy_last": 2024,
+   "projects": [
+    "Douglas/Merle Hay",
+    "MHM Phase IIIA",
+    "MHM Phase IIIB"
+   ]
+  },
+  {
+   "recipient": "Market One LLC",
+   "actual_rebate_paid": 1984051,
+   "payments": 8,
+   "fy_first": 2017,
+   "fy_last": 2024,
+   "projects": [
+    "130 East 3rd Street"
+   ]
+  },
+  {
+   "recipient": "EMC",
+   "actual_rebate_paid": 1897732,
+   "payments": 6,
+   "fy_first": 2014,
+   "fy_last": 2024,
+   "projects": [
+    "EMC",
+    "EMC 699 Walnut Hub Tower",
+    "EMC Park Stairs"
+   ]
+  },
+  {
+   "recipient": "R & T Lofts",
+   "actual_rebate_paid": 1850000,
+   "payments": 5,
+   "fy_first": 2020,
+   "fy_last": 2024,
+   "projects": [
+    "421 8th Street"
+   ]
+  },
+  {
+   "recipient": "Nelson Construction",
+   "actual_rebate_paid": 1660926,
+   "payments": 4,
+   "fy_first": 2019,
+   "fy_last": 2024,
+   "projects": [
+    "Miesblock 665 Grand Ave"
+   ]
+  },
+  {
+   "recipient": "Wilkins Redevelopment LLC",
+   "actual_rebate_paid": 1637532,
+   "payments": 5,
+   "fy_first": 2020,
+   "fy_last": 2024,
+   "projects": [
+    "713 Walnut Street"
+   ]
+  },
+  {
+   "recipient": "AC Marriot Hotel",
+   "actual_rebate_paid": 1630397,
+   "payments": 6,
+   "fy_first": 2019,
+   "fy_last": 2024,
+   "projects": [
+    "401 East Grand Ave"
+   ]
+  },
+  {
+   "recipient": "Polk County",
+   "actual_rebate_paid": 1612500,
+   "payments": 8,
+   "fy_first": 2013,
+   "fy_last": 2021,
+   "projects": [
+    "InPlay",
+    "InPlay  215 Watson Powell Way",
+    "Laurisden Skate Park"
+   ]
+  },
+  {
+   "recipient": "Court Avenue Investors, Inc.",
+   "actual_rebate_paid": 1441500,
+   "payments": 24,
+   "fy_first": 2013,
+   "fy_last": 2024,
+   "projects": [
+    "Court Ave. Partners 4th and Court",
+    "New building with retail, housing and parking components",
+    "Renovation of historic building with first floor commercial ",
+    "Spaghetti Works Bldg   302-310 Court Ave."
+   ]
+  },
+  {
+   "recipient": "ND25 SW 5th LLC",
+   "actual_rebate_paid": 1294304,
+   "payments": 7,
+   "fy_first": 2013,
+   "fy_last": 2020,
+   "projects": [
+    "Hawkeye Transfer Lofts 328 SW 5th St.",
+    "Renovation of former warehouse into housing"
+   ]
+  },
+  {
+   "recipient": "Village Place LLC",
+   "actual_rebate_paid": 1260000,
+   "payments": 12,
+   "fy_first": 2013,
+   "fy_last": 2024,
+   "projects": [
+    "New buildings with commercial, residential and parking struc",
+    "Village Place     521 E. Locust St."
+   ]
+  },
+  {
+   "recipient": "Federal Home Loan Bank",
+   "actual_rebate_paid": 1107048,
+   "payments": 4,
+   "fy_first": 2021,
+   "fy_last": 2024,
+   "projects": [
+    "Federal Home Loan Bank HQ"
+   ]
+  },
+  {
+   "recipient": "Distric at 6th, LLC",
+   "actual_rebate_paid": 1050000,
+   "payments": 3,
+   "fy_first": 2022,
+   "fy_last": 2024,
+   "projects": [
+    "201 SE 6th St Development"
+   ]
+  },
+  {
+   "recipient": "TWG Development",
+   "actual_rebate_paid": 1002513,
+   "payments": 3,
+   "fy_first": 2022,
+   "fy_last": 2024,
+   "projects": [
+    "Apartment building construction"
+   ]
+  },
+  {
+   "recipient": "Rowat Lofts, LLC",
+   "actual_rebate_paid": 960000,
+   "payments": 3,
+   "fy_first": 2022,
+   "fy_last": 2024,
+   "projects": [
+    "SE 6th to SE 7th St & Market St"
+   ]
+  },
+  {
+   "recipient": "East Village Partners LLC",
+   "actual_rebate_paid": 846000,
+   "payments": 5,
+   "fy_first": 2013,
+   "fy_last": 2019,
+   "projects": [
+    "New mixed use bldg in East Village",
+    "Soho 401 E. Locust St."
+   ]
+  },
+  {
+   "recipient": "101 E Grand Parking LLC",
+   "actual_rebate_paid": 845663,
+   "payments": 4,
+   "fy_first": 2021,
+   "fy_last": 2024,
+   "projects": [
+    "111 E Grand Ave Phase II"
+   ]
+  },
+  {
+   "recipient": "Fleming",
+   "actual_rebate_paid": 800000,
+   "payments": 5,
+   "fy_first": 2014,
+   "fy_last": 2018,
+   "projects": [
+    "Fleming"
+   ]
+  },
+  {
+   "recipient": "College Hill Associates",
+   "actual_rebate_paid": 762247,
+   "payments": 5,
+   "fy_first": 2020,
+   "fy_last": 2024,
+   "projects": [
+    "921 6th Ave"
+   ]
+  },
+  {
+   "recipient": "Capital Auto Parts",
+   "actual_rebate_paid": 720000,
+   "payments": 1,
+   "fy_first": 2019,
+   "fy_last": 2019,
+   "projects": [
+    "Purchase of 3800 Vandalia Road"
+   ]
+  },
+  {
+   "recipient": "505 E GRAND LLC",
+   "actual_rebate_paid": 707243,
+   "payments": 7,
+   "fy_first": 2018,
+   "fy_last": 2024,
+   "projects": [
+    "505 East Grand"
+   ]
+  },
+  {
+   "recipient": "EAST VILLAGE PARTNERS",
+   "actual_rebate_paid": 624750,
+   "payments": 7,
+   "fy_first": 2018,
+   "fy_last": 2024,
+   "projects": [
+    "600 East 5th Street"
+   ]
+  },
+  {
+   "recipient": "Liberty Building Historic Rehab LLC",
+   "actual_rebate_paid": 616084,
+   "payments": 3,
+   "fy_first": 2017,
+   "fy_last": 2019,
+   "projects": [
+    "Renovation of historic building for commercial, hotel and re"
+   ]
+  },
+  {
+   "recipient": "CITYVILLE",
+   "actual_rebate_paid": 594042,
+   "payments": 7,
+   "fy_first": 2018,
+   "fy_last": 2024,
+   "projects": [
+    "SW 9th Street between Murphy St and DART Lane"
+   ]
+  },
+  {
+   "recipient": "Ballyard Lofts 350 SW 2nd",
+   "actual_rebate_paid": 576164,
+   "payments": 10,
+   "fy_first": 2015,
+   "fy_last": 2024,
+   "projects": [
+    "Ballyard Lofts"
+   ]
+  },
+  {
+   "recipient": "SOUTHGATE REAL ESTATE HOLDINGS",
+   "actual_rebate_paid": 568825,
+   "payments": 5,
+   "fy_first": 2020,
+   "fy_last": 2024,
+   "projects": [
+    "50 Unit Residential Housing Development"
+   ]
+  },
+  {
+   "recipient": "219 E Grand LLC",
+   "actual_rebate_paid": 542328,
+   "payments": 5,
+   "fy_first": 2020,
+   "fy_last": 2024,
+   "projects": [
+    "219 E Grand"
+   ]
+  },
+  {
+   "recipient": "207 Crocker, LLC",
+   "actual_rebate_paid": 512208,
+   "payments": 3,
+   "fy_first": 2022,
+   "fy_last": 2024,
+   "projects": [
+    "Fairfield Inn at 207 Crocker St"
+   ]
+  },
+  {
+   "recipient": "CARBON 550",
+   "actual_rebate_paid": 500000,
+   "payments": 1,
+   "fy_first": 2018,
+   "fy_last": 2018,
+   "projects": [
+    "550 Watson Powell Jr. Way"
+   ]
+  },
+  {
+   "recipient": "Greenstate Credit Union",
+   "actual_rebate_paid": 481172,
+   "payments": 5,
+   "fy_first": 2021,
+   "fy_last": 2024,
+   "projects": [
+    "Redevelop 213 13th Street",
+    "Redevelopment of buildings into residential units"
+   ]
+  },
+  {
+   "recipient": "Opomodo LLC",
+   "actual_rebate_paid": 478157,
+   "payments": 9,
+   "fy_first": 2013,
+   "fy_last": 2021,
+   "projects": [
+    "Commercial Bldg  1717 Ingersoll",
+    "Renovation of former car dealership building"
+   ]
+  },
+  {
+   "recipient": "IDOT",
+   "actual_rebate_paid": 471933,
+   "payments": 1,
+   "fy_first": 2013,
+   "fy_last": 2013,
+   "projects": [
+    "MLK infrastructure"
+   ]
+  },
+  {
+   "recipient": "Aviva",
+   "actual_rebate_paid": 470116,
+   "payments": 2,
+   "fy_first": 2013,
+   "fy_last": 2014,
+   "projects": [
+    "Aviva     215  10th St.",
+    "Lease/renovation of office space"
+   ]
+  },
+  {
+   "recipient": "Hubbell",
+   "actual_rebate_paid": 429690,
+   "payments": 3,
+   "fy_first": 2013,
+   "fy_last": 2015,
+   "projects": [
+    "Hubbell Riverpoint  7th & Tuttle",
+    "Hubbell SW 7th Office Park"
+   ]
+  },
+  {
+   "recipient": "7 & Grand Ramp Developer LLC",
+   "actual_rebate_paid": 428947,
+   "payments": 3,
+   "fy_first": 2020,
+   "fy_last": 2022,
+   "projects": [
+    "Parking Ramp"
+   ]
+  },
+  {
+   "recipient": "ST Investments LLC",
+   "actual_rebate_paid": 417500,
+   "payments": 1,
+   "fy_first": 2013,
+   "fy_last": 2013,
+   "projects": [
+    "New mixed use bldg in East Village"
+   ]
+  },
+  {
+   "recipient": "Des Moines Performing Arts",
+   "actual_rebate_paid": 400000,
+   "payments": 4,
+   "fy_first": 2015,
+   "fy_last": 2019,
+   "projects": [
+    "Cowles Commons"
+   ]
+  },
+  {
+   "recipient": "Dilley Manufacturing",
+   "actual_rebate_paid": 386529,
+   "payments": 6,
+   "fy_first": 2019,
+   "fy_last": 2024,
+   "projects": [
+    "215 East 3rd Street"
+   ]
+  },
+  {
+   "recipient": "Locust Street Investments LLC",
+   "actual_rebate_paid": 384065,
+   "payments": 8,
+   "fy_first": 2017,
+   "fy_last": 2024,
+   "projects": [
+    "1420-1430 Locust"
+   ]
+  },
+  {
+   "recipient": "ST DEVELOPMENT",
+   "actual_rebate_paid": 383604,
+   "payments": 4,
+   "fy_first": 2018,
+   "fy_last": 2021,
+   "projects": [
+    "New mixed use bldg in East Village"
+   ]
+  },
+  {
+   "recipient": "Temple for Performing Arts",
+   "actual_rebate_paid": 372000,
+   "payments": 12,
+   "fy_first": 2013,
+   "fy_last": 2024,
+   "projects": [
+    "Temple for Performing Arts 1101 Locust",
+    "former Masonic Temple"
+   ]
+  },
+  {
+   "recipient": "3801, LLC",
+   "actual_rebate_paid": 357500,
+   "payments": 9,
+   "fy_first": 2016,
+   "fy_last": 2024,
+   "projects": [
+    "Commercial Development",
+    "Commercial Development "
+   ]
+  },
+  {
+   "recipient": "Helena Industries",
+   "actual_rebate_paid": 339291,
+   "payments": 5,
+   "fy_first": 2020,
+   "fy_last": 2024,
+   "projects": [
+    "Helena Industries Expansion"
+   ]
+  },
+  {
+   "recipient": "Center at 6th",
+   "actual_rebate_paid": 300000,
+   "payments": 2,
+   "fy_first": 2023,
+   "fy_last": 2024,
+   "projects": [
+    "1714 6th Ave"
+   ]
+  },
+  {
+   "recipient": "Hotel Francis, LLC",
+   "actual_rebate_paid": 291108,
+   "payments": 2,
+   "fy_first": 2023,
+   "fy_last": 2024,
+   "projects": [
+    "Develop property"
+   ]
+  },
+  {
+   "recipient": "Southridge Senior Lofts",
+   "actual_rebate_paid": 268240,
+   "payments": 6,
+   "fy_first": 2019,
+   "fy_last": 2024,
+   "projects": [
+    "Redevelopment of regional retail center (Southridge Mall)"
+   ]
+  },
+  {
+   "recipient": "Hubbell Realty",
+   "actual_rebate_paid": 266000,
+   "payments": 1,
+   "fy_first": 2016,
+   "fy_last": 2016,
+   "projects": [
+    "1623 Grand Ave"
+   ]
+  },
+  {
+   "recipient": "Joe's Square LLC",
+   "actual_rebate_paid": 250000,
+   "payments": 5,
+   "fy_first": 2013,
+   "fy_last": 2017,
+   "projects": [
+    "22,000 sq. ft. new bldg with retail and commercial services",
+    "Joe's Square   4049 Fagen Dr."
+   ]
+  },
+  {
+   "recipient": "Thompson Properties LLC",
+   "actual_rebate_paid": 248146,
+   "payments": 4,
+   "fy_first": 2021,
+   "fy_last": 2024,
+   "projects": [
+    "Thompson Properties rebate agreement"
+   ]
+  },
+  {
+   "recipient": "R.E. Properties, LLC",
+   "actual_rebate_paid": 243671,
+   "payments": 5,
+   "fy_first": 2013,
+   "fy_last": 2017,
+   "projects": [
+    "Renovation of historic bldgs. with apts. on 2nd floor",
+    "Studio Block Bldg.    506-524 E. Grand Ave."
+   ]
+  },
+  {
+   "recipient": "LIBERTY BUILDING HISTORIC REHAB LLC",
+   "actual_rebate_paid": 240000,
+   "payments": 1,
+   "fy_first": 2016,
+   "fy_last": 2016,
+   "projects": [
+    "Renovation of historic building for commercial, hotel and re"
+   ]
+  },
+  {
+   "recipient": "Nelson Development",
+   "actual_rebate_paid": 223091,
+   "payments": 3,
+   "fy_first": 2022,
+   "fy_last": 2024,
+   "projects": [
+    "418 E Grand Redevelopment"
+   ]
+  },
+  {
+   "recipient": "STOREY KENWORTHY",
+   "actual_rebate_paid": 200000,
+   "payments": 1,
+   "fy_first": 2020,
+   "fy_last": 2020,
+   "projects": [
+    "Business Expansion"
+   ]
+  },
+  {
+   "recipient": "Ingersoll-Grand SSMID",
+   "actual_rebate_paid": 197269,
+   "payments": 1,
+   "fy_first": 2019,
+   "fy_last": 2019,
+   "projects": [
+    "SSMID repayments"
+   ]
+  },
+  {
+   "recipient": "Iowa State Bank",
+   "actual_rebate_paid": 193054,
+   "payments": 3,
+   "fy_first": 2013,
+   "fy_last": 2015,
+   "projects": [
+    "Gateway East office bldg. 601 East Locust St.",
+    "New office building"
+   ]
+  },
+  {
+   "recipient": "MAREL MEAT",
+   "actual_rebate_paid": 181017,
+   "payments": 6,
+   "fy_first": 2018,
+   "fy_last": 2024,
+   "projects": [
+    "401 SW 7th Street"
+   ]
+  },
+  {
+   "recipient": "Urban Campus Aprartments LLP",
+   "actual_rebate_paid": 164000,
+   "payments": 1,
+   "fy_first": 2023,
+   "fy_last": 2023,
+   "projects": [
+    "Develop 1230 6th Avenue"
+   ]
+  },
+  {
+   "recipient": "206 6th Avenue LLC",
+   "actual_rebate_paid": 161018,
+   "payments": 1,
+   "fy_first": 2024,
+   "fy_last": 2024,
+   "projects": [
+    "Midland Building Renovation"
+   ]
+  },
+  {
+   "recipient": "H Glass Partners LLC",
+   "actual_rebate_paid": 159397,
+   "payments": 5,
+   "fy_first": 2020,
+   "fy_last": 2024,
+   "projects": [
+    "212 E 3rd Street"
+   ]
+  },
+  {
+   "recipient": "ABC Partners",
+   "actual_rebate_paid": 158747,
+   "payments": 1,
+   "fy_first": 2013,
+   "fy_last": 2013,
+   "projects": [
+    "Build infrastructure for business park (streets, sewers)"
+   ]
+  },
+  {
+   "recipient": "Freedom Financial Bank",
+   "actual_rebate_paid": 151724,
+   "payments": 2,
+   "fy_first": 2023,
+   "fy_last": 2024,
+   "projects": [
+    "319 7th St Renovation"
+   ]
+  },
+  {
+   "recipient": "Bronson Partners",
+   "actual_rebate_paid": 150710,
+   "payments": 6,
+   "fy_first": 2019,
+   "fy_last": 2024,
+   "projects": [
+    "1417 Walnut St"
+   ]
+  },
+  {
+   "recipient": "Life Care Services",
+   "actual_rebate_paid": 146000,
+   "payments": 5,
+   "fy_first": 2013,
+   "fy_last": 2017,
+   "projects": [
+    "Life Care Services",
+    "Life Care Services 400 Locust Street"
+   ]
+  },
+  {
+   "recipient": "Westgate Partnership",
+   "actual_rebate_paid": 141082,
+   "payments": 9,
+   "fy_first": 2015,
+   "fy_last": 2023,
+   "projects": [
+    "Chamberlain Bldg TF047 1408 Locust"
+   ]
+  },
+  {
+   "recipient": "Macerich",
+   "actual_rebate_paid": 119853,
+   "payments": 3,
+   "fy_first": 2021,
+   "fy_last": 2024,
+   "projects": [
+    "Redevelopment of regional retail center (Southridge Mall)"
+   ]
+  },
+  {
+   "recipient": "317 E Court LLC",
+   "actual_rebate_paid": 111443,
+   "payments": 4,
+   "fy_first": 2021,
+   "fy_last": 2024,
+   "projects": [
+    "New building with retail, housing and parking components"
+   ]
+  },
+  {
+   "recipient": "Civic Center of Greater Ds Moines",
+   "actual_rebate_paid": 100000,
+   "payments": 1,
+   "fy_first": 2013,
+   "fy_last": 2013,
+   "projects": [
+    "Renovation of performing arts center"
+   ]
+  },
+  {
+   "recipient": "Panera",
+   "actual_rebate_paid": 97365,
+   "payments": 6,
+   "fy_first": 2019,
+   "fy_last": 2024,
+   "projects": [
+    "Development of retail"
+   ]
+  },
+  {
+   "recipient": "RE3 LLC",
+   "actual_rebate_paid": 91861,
+   "payments": 4,
+   "fy_first": 2021,
+   "fy_last": 2024,
+   "projects": [
+    "440 E Grand Renovation"
+   ]
+  },
+  {
+   "recipient": "Raccoon Valley Investments LLC",
+   "actual_rebate_paid": 89543,
+   "payments": 11,
+   "fy_first": 2013,
+   "fy_last": 2023,
+   "projects": [
+    "Development of retail",
+    "Starbuck's"
+   ]
+  },
+  {
+   "recipient": "Commonwealth Electric",
+   "actual_rebate_paid": 63500,
+   "payments": 1,
+   "fy_first": 2022,
+   "fy_last": 2022,
+   "projects": [
+    "Improvement Projects"
+   ]
+  },
+  {
+   "recipient": "Spot 515 LLC",
+   "actual_rebate_paid": 58997,
+   "payments": 1,
+   "fy_first": 2024,
+   "fy_last": 2024,
+   "projects": [
+    "Redevelop 515 28th Street"
+   ]
+  },
+  {
+   "recipient": "SHERMAN HILL SSMID",
+   "actual_rebate_paid": 53698,
+   "payments": 6,
+   "fy_first": 2018,
+   "fy_last": 2023,
+   "projects": [
+    "SSMID PORTION of METRO CENTER"
+   ]
+  },
+  {
+   "recipient": "Employers Mutual Casualty Company",
+   "actual_rebate_paid": 50000,
+   "payments": 2,
+   "fy_first": 2023,
+   "fy_last": 2024,
+   "projects": [
+    "219 8th Street"
+   ]
+  },
+  {
+   "recipient": "Landus Cooperative",
+   "actual_rebate_paid": 50000,
+   "payments": 1,
+   "fy_first": 2024,
+   "fy_last": 2024,
+   "projects": [
+    "Landus Cooperative"
+   ]
+  },
+  {
+   "recipient": "Reagan Partners",
+   "actual_rebate_paid": 50000,
+   "payments": 1,
+   "fy_first": 2024,
+   "fy_last": 2024,
+   "projects": [
+    "Renovate apartment building"
+   ]
+  },
+  {
+   "recipient": "Bell Ave Properties, Inc",
+   "actual_rebate_paid": 40000,
+   "payments": 1,
+   "fy_first": 2023,
+   "fy_last": 2023,
+   "projects": [
+    "Walldinger"
+   ]
+  },
+  {
+   "recipient": "Central Wire & Iron",
+   "actual_rebate_paid": 23730,
+   "payments": 1,
+   "fy_first": 2015,
+   "fy_last": 2015,
+   "projects": [
+    "Economic Development Agreement"
+   ]
+  },
+  {
+   "recipient": "1439 Michigan Street",
+   "actual_rebate_paid": 22230,
+   "payments": 1,
+   "fy_first": 2024,
+   "fy_last": 2024,
+   "projects": [
+    "1439 Michigan St"
+   ]
+  },
+  {
+   "recipient": "Simpson Law Firm",
+   "actual_rebate_paid": 21600,
+   "payments": 7,
+   "fy_first": 2014,
+   "fy_last": 2021,
+   "projects": [
+    "Simpson Law Firm"
+   ]
+  },
+  {
+   "recipient": "GREENWOOD INVESTORS II LLC",
+   "actual_rebate_paid": 15000,
+   "payments": 1,
+   "fy_first": 2018,
+   "fy_last": 2018,
+   "projects": [
+    "Grants for streetscape improvements"
+   ]
+  },
+  {
+   "recipient": "PIGOTT INC",
+   "actual_rebate_paid": 15000,
+   "payments": 1,
+   "fy_first": 2018,
+   "fy_last": 2018,
+   "projects": [
+    "Grants for streetscape improvements"
+   ]
+  },
+  {
+   "recipient": "Airport Commerce Park LLC",
+   "actual_rebate_paid": 12284,
+   "payments": 1,
+   "fy_first": 2013,
+   "fy_last": 2013,
+   "projects": [
+    "Street Improvements"
+   ]
+  },
+  {
+   "recipient": "Storey Kenworthy",
+   "actual_rebate_paid": 8425,
+   "payments": 1,
+   "fy_first": 2020,
+   "fy_last": 2020,
+   "projects": [
+    "Business Expansion"
+   ]
+  },
+  {
+   "recipient": "JR Partners LLC",
+   "actual_rebate_paid": 6835,
+   "payments": 1,
+   "fy_first": 2024,
+   "fy_last": 2024,
+   "projects": [
+    "Redevelop 401 E Court Ave"
+   ]
+  },
+  {
+   "recipient": "FW Rehab LLC",
+   "actual_rebate_paid": 4221,
+   "payments": 1,
+   "fy_first": 2024,
+   "fy_last": 2024,
+   "projects": [
+    "3610 6th Ave"
+   ]
+  },
+  {
+   "recipient": "Lincoln Savings Bank",
+   "actual_rebate_paid": 138,
+   "payments": 1,
+   "fy_first": 2024,
+   "fy_last": 2024,
+   "projects": [
+    "1723 Grand Ave"
+   ]
+  }
+ ]
+}

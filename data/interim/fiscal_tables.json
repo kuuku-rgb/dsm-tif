@@ -1,0 +1,2295 @@
+{
+ "18-441": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 575132,
+    "taxes_with_project": 1251921,
+    "incentive_paid": 495000,
+    "net_taxes_received": 756921,
+    "net_public_gain_vs_baseline": 181789
+   },
+   "20": {
+    "taxes_without_project": 1148173,
+    "taxes_with_project": 4199727,
+    "incentive_paid": 2403908,
+    "net_taxes_received": 1795819,
+    "net_public_gain_vs_baseline": 647646
+   },
+   "30": {
+    "taxes_without_project": 1796517,
+    "taxes_with_project": 7723521,
+    "incentive_paid": 2845578,
+    "net_taxes_received": 4877943,
+    "net_public_gain_vs_baseline": 3081426
+   }
+  }
+ },
+ "18-476": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 16121,
+    "taxes_with_project": 3894323,
+    "incentive_paid": 1817254,
+    "net_taxes_received": 2077069,
+    "net_public_gain_vs_baseline": 2060948
+   },
+   "20": {
+    "taxes_without_project": 32242,
+    "taxes_with_project": 10078375,
+    "incentive_paid": 1817389,
+    "net_taxes_received": 8260986,
+    "net_public_gain_vs_baseline": 8228744
+   }
+  }
+ },
+ "18-606": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 31751,
+    "taxes_with_project": 4964772,
+    "incentive_paid": 2837825,
+    "net_taxes_received": 2126947,
+    "net_public_gain_vs_baseline": 2095196
+   },
+   "20": {
+    "taxes_without_project": 68256,
+    "taxes_with_project": 10725893,
+    "incentive_paid": 4422313,
+    "net_taxes_received": 6303580,
+    "net_public_gain_vs_baseline": 6235324
+   },
+   "30": {
+    "taxes_without_project": 108732,
+    "taxes_with_project": 17411098,
+    "incentive_paid": 4422313,
+    "net_taxes_received": 12988785,
+    "net_public_gain_vs_baseline": 12880053
+   }
+  }
+ },
+ "18-681": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 397189,
+    "taxes_with_project": 4889270,
+    "incentive_paid": 2491195,
+    "net_taxes_received": 2398075,
+    "net_public_gain_vs_baseline": 2000886
+   },
+   "20": {
+    "taxes_without_project": 794379,
+    "taxes_with_project": 10371318,
+    "incentive_paid": 3296983,
+    "net_taxes_received": 7074335,
+    "net_public_gain_vs_baseline": 6279956
+   },
+   "30": {
+    "taxes_without_project": 1191540,
+    "taxes_with_project": 13366783,
+    "incentive_paid": 3296983,
+    "net_taxes_received": 10069800,
+    "net_public_gain_vs_baseline": 8878260
+   }
+  }
+ },
+ "19-005": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 1751306,
+    "incentive_paid": 353074,
+    "net_taxes_received": 1398232,
+    "net_public_gain_vs_baseline": 1398232
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 3502612,
+    "incentive_paid": 353074,
+    "net_taxes_received": 3149538,
+    "net_public_gain_vs_baseline": 3149538
+   }
+  }
+ },
+ "19-046": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 31751,
+    "taxes_with_project": 4964772,
+    "incentive_paid": 2837825,
+    "net_taxes_received": 2126947,
+    "net_public_gain_vs_baseline": 2095196
+   },
+   "20": {
+    "taxes_without_project": 68256,
+    "taxes_with_project": 10725893,
+    "incentive_paid": 4422313,
+    "net_taxes_received": 6313580,
+    "net_public_gain_vs_baseline": 6245324
+   },
+   "30": {
+    "taxes_without_project": 108732,
+    "taxes_with_project": 17411098,
+    "incentive_paid": 4422313,
+    "net_taxes_received": 12988785,
+    "net_public_gain_vs_baseline": 12880053
+   }
+  }
+ },
+ "19-119": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 16121,
+    "taxes_with_project": 6477520,
+    "incentive_paid": 2300000,
+    "net_taxes_received": 4177520,
+    "net_public_gain_vs_baseline": 4161399
+   },
+   "20": {
+    "taxes_without_project": 32242,
+    "taxes_with_project": 12955040,
+    "incentive_paid": 2300000,
+    "net_taxes_received": 10655040,
+    "net_public_gain_vs_baseline": 10622798
+   }
+  }
+ },
+ "19-166": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 794379,
+    "taxes_with_project": 9576939,
+    "incentive_paid": 2000000,
+    "net_taxes_received": 7576939,
+    "net_public_gain_vs_baseline": 6782560
+   },
+   "30": {
+    "taxes_without_project": 1191540,
+    "taxes_with_project": 16346173,
+    "incentive_paid": 2000000,
+    "net_taxes_received": 14346173,
+    "net_public_gain_vs_baseline": 13154633
+   }
+  }
+ },
+ "19-173": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 121464,
+    "taxes_with_project": 373247,
+    "incentive_paid": 164201,
+    "net_taxes_received": 209046,
+    "net_public_gain_vs_baseline": 87582
+   },
+   "20": {
+    "taxes_without_project": 269509,
+    "taxes_with_project": 2227804,
+    "incentive_paid": 1617227,
+    "net_taxes_received": 610577,
+    "net_public_gain_vs_baseline": 341068
+   },
+   "30": {
+    "taxes_without_project": 449955,
+    "taxes_with_project": 4636273,
+    "incentive_paid": 1966987,
+    "net_taxes_received": 2669286,
+    "net_public_gain_vs_baseline": 2219331
+   }
+  }
+ },
+ "19-216": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 121464,
+    "taxes_with_project": 373247,
+    "incentive_paid": 164201,
+    "net_taxes_received": 209046,
+    "net_public_gain_vs_baseline": 87582
+   },
+   "20": {
+    "taxes_without_project": 269509,
+    "taxes_with_project": 2227804,
+    "incentive_paid": 1617227,
+    "net_taxes_received": 610577,
+    "net_public_gain_vs_baseline": 341068
+   },
+   "30": {
+    "taxes_without_project": 449955,
+    "taxes_with_project": 4636273,
+    "incentive_paid": 1966987,
+    "net_taxes_received": 2669286,
+    "net_public_gain_vs_baseline": 2219331
+   }
+  }
+ },
+ "19-377": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 418633,
+    "taxes_with_project": 4229305,
+    "incentive_paid": 2000000,
+    "net_taxes_received": 2229305,
+    "net_public_gain_vs_baseline": 1810672
+   },
+   "20": {
+    "taxes_without_project": 892509,
+    "taxes_with_project": 9016711,
+    "incentive_paid": 2000000,
+    "net_taxes_received": 7016711,
+    "net_public_gain_vs_baseline": 6124202
+   },
+   "30": {
+    "taxes_without_project": 1405336,
+    "taxes_with_project": 14197613,
+    "incentive_paid": 2000000,
+    "net_taxes_received": 12197613,
+    "net_public_gain_vs_baseline": 10792277
+   }
+  }
+ },
+ "19-413": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 924099,
+    "taxes_with_project": 3734331,
+    "incentive_paid": 1964133,
+    "net_taxes_received": 1770198,
+    "net_public_gain_vs_baseline": 846099
+   },
+   "20": {
+    "taxes_without_project": 2050436,
+    "taxes_with_project": 8813917,
+    "incentive_paid": 3412850,
+    "net_taxes_received": 5401066,
+    "net_public_gain_vs_baseline": 3350630
+   },
+   "30": {
+    "taxes_without_project": 3356436,
+    "taxes_with_project": 15002332,
+    "incentive_paid": 3412850,
+    "net_taxes_received": 11589482,
+    "net_public_gain_vs_baseline": 8233046
+   }
+  }
+ },
+ "19-417": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 8716485,
+    "incentive_paid": 5751784,
+    "net_taxes_received": 2964701,
+    "net_public_gain_vs_baseline": 2964701
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 19395794,
+    "incentive_paid": 5751784,
+    "net_taxes_received": 13664010,
+    "net_public_gain_vs_baseline": 13664010
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 32412247,
+    "incentive_paid": 5751784,
+    "net_taxes_received": 26660463,
+    "net_public_gain_vs_baseline": 26660463
+   }
+  }
+ },
+ "19-453": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 1786699,
+    "incentive_paid": 1125952,
+    "net_taxes_received": 660747,
+    "net_public_gain_vs_baseline": 660747
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 4194475,
+    "incentive_paid": 1125952,
+    "net_taxes_received": 3068523,
+    "net_public_gain_vs_baseline": 3068523
+   }
+  }
+ },
+ "19-496": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 1786699,
+    "incentive_paid": 1125952,
+    "net_taxes_received": 660747,
+    "net_public_gain_vs_baseline": 660747
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 4194475,
+    "incentive_paid": 1125952,
+    "net_taxes_received": 3068523,
+    "net_public_gain_vs_baseline": 3068523
+   }
+  }
+ },
+ "19-501": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 301292,
+    "taxes_with_project": 4409309,
+    "incentive_paid": 3742813,
+    "net_taxes_received": 666496,
+    "net_public_gain_vs_baseline": 365204
+   },
+   "20": {
+    "taxes_without_project": 602584,
+    "taxes_with_project": 9553545,
+    "incentive_paid": 5598819,
+    "net_taxes_received": 3954726,
+    "net_public_gain_vs_baseline": 3352142
+   },
+   "30": {
+    "taxes_without_project": 903876,
+    "taxes_with_project": 15570620,
+    "incentive_paid": 5598819,
+    "net_taxes_received": 9971801,
+    "net_public_gain_vs_baseline": 9067925
+   }
+  }
+ },
+ "19-546": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 924099,
+    "taxes_with_project": 3734331,
+    "incentive_paid": 1964133,
+    "net_taxes_received": 1770198,
+    "net_public_gain_vs_baseline": 846099
+   },
+   "20": {
+    "taxes_without_project": 2050436,
+    "taxes_with_project": 8813917,
+    "incentive_paid": 3412850,
+    "net_taxes_received": 5401066,
+    "net_public_gain_vs_baseline": 3350630
+   },
+   "30": {
+    "taxes_without_project": 3356436,
+    "taxes_with_project": 15002332,
+    "incentive_paid": 3412850,
+    "net_taxes_received": 11589482,
+    "net_public_gain_vs_baseline": 8233046
+   }
+  }
+ },
+ "19-548": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 77261,
+    "taxes_with_project": 506296,
+    "incentive_paid": 325921,
+    "net_taxes_received": 180375,
+    "net_public_gain_vs_baseline": 103114
+   },
+   "20": {
+    "taxes_without_project": 171430,
+    "taxes_with_project": 1234238,
+    "incentive_paid": 818981,
+    "net_taxes_received": 415257,
+    "net_public_gain_vs_baseline": 243827
+   },
+   "30": {
+    "taxes_without_project": 286208,
+    "taxes_with_project": 2112989,
+    "incentive_paid": 930609,
+    "net_taxes_received": 1182381,
+    "net_public_gain_vs_baseline": 896173
+   }
+  }
+ },
+ "19-556": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 479836,
+    "taxes_with_project": 14493583,
+    "incentive_paid": 5335217,
+    "net_taxes_received": 9158366,
+    "net_public_gain_vs_baseline": 8678530
+   },
+   "30": {
+    "taxes_without_project": 719754,
+    "taxes_with_project": 28866542,
+    "incentive_paid": 5335217,
+    "net_taxes_received": 23531325,
+    "net_public_gain_vs_baseline": 22811571
+   }
+  }
+ },
+ "20-073": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 301292,
+    "taxes_with_project": 4409309,
+    "incentive_paid": 3742813,
+    "net_taxes_received": 666496,
+    "net_public_gain_vs_baseline": 365204
+   },
+   "20": {
+    "taxes_without_project": 602584,
+    "taxes_with_project": 9553545,
+    "incentive_paid": 5598819,
+    "net_taxes_received": 3954726,
+    "net_public_gain_vs_baseline": 3352142
+   },
+   "30": {
+    "taxes_without_project": 903876,
+    "taxes_with_project": 15570620,
+    "incentive_paid": 5598819,
+    "net_taxes_received": 9971801,
+    "net_public_gain_vs_baseline": 9067925
+   }
+  }
+ },
+ "20-099": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 8716485,
+    "incentive_paid": 6544088,
+    "net_taxes_received": 2172397,
+    "net_public_gain_vs_baseline": 2172397
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 19395794,
+    "incentive_paid": 6544088,
+    "net_taxes_received": 12851706,
+    "net_public_gain_vs_baseline": 12851706
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 32412247,
+    "incentive_paid": 6544088,
+    "net_taxes_received": 25868159,
+    "net_public_gain_vs_baseline": 25868159
+   }
+  }
+ },
+ "20-138": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 1092244,
+    "taxes_with_project": 2509377,
+    "incentive_paid": 1395000,
+    "net_taxes_received": 1114377,
+    "net_public_gain_vs_baseline": 22133
+   },
+   "30": {
+    "taxes_without_project": 1802394,
+    "taxes_with_project": 4679465,
+    "incentive_paid": 1395000,
+    "net_taxes_received": 3284465,
+    "net_public_gain_vs_baseline": 1482071
+   }
+  }
+ },
+ "20-153": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 12743257,
+    "taxes_with_project": 33099634,
+    "incentive_paid": 10576567,
+    "net_taxes_received": 22523067,
+    "net_public_gain_vs_baseline": 9779810
+   },
+   "30": {
+    "taxes_without_project": 21275278,
+    "taxes_with_project": 56480477,
+    "incentive_paid": 10576567,
+    "net_taxes_received": 45903910,
+    "net_public_gain_vs_baseline": 24628632
+   }
+  }
+ },
+ "20-245": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 12743257,
+    "taxes_with_project": 33099634,
+    "incentive_paid": 10576567,
+    "net_taxes_received": 22523067,
+    "net_public_gain_vs_baseline": 9779810
+   },
+   "30": {
+    "taxes_without_project": 21275278,
+    "taxes_with_project": 56480477,
+    "incentive_paid": 10576567,
+    "net_taxes_received": 45903910,
+    "net_public_gain_vs_baseline": 24628632
+   }
+  }
+ },
+ "20-310": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 8716485,
+    "incentive_paid": 7264945,
+    "net_taxes_received": 1451540,
+    "net_public_gain_vs_baseline": 1451540
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 19395794,
+    "incentive_paid": 10221534,
+    "net_taxes_received": 9174260,
+    "net_public_gain_vs_baseline": 9174260
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 32412247,
+    "incentive_paid": 10221534,
+    "net_taxes_received": 22190713,
+    "net_public_gain_vs_baseline": 22190713
+   }
+  }
+ },
+ "20-345": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 1092244,
+    "taxes_with_project": 2509377,
+    "incentive_paid": 1395000,
+    "net_taxes_received": 1114377,
+    "net_public_gain_vs_baseline": 22133
+   },
+   "30": {
+    "taxes_without_project": 1802394,
+    "taxes_with_project": 4679465,
+    "incentive_paid": 1395000,
+    "net_taxes_received": 3284465,
+    "net_public_gain_vs_baseline": 1482071
+   }
+  }
+ },
+ "20-353": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 1366744,
+    "taxes_with_project": 17485616,
+    "incentive_paid": 15499986,
+    "net_taxes_received": 1985630,
+    "net_public_gain_vs_baseline": 618886
+   }
+  }
+ },
+ "20-386": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 1096141,
+    "incentive_paid": 669328,
+    "net_taxes_received": 426813,
+    "net_public_gain_vs_baseline": 426813
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 2705783,
+    "incentive_paid": 1235730,
+    "net_taxes_received": 1470053,
+    "net_public_gain_vs_baseline": 1470053
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 4669513,
+    "incentive_paid": 1235730,
+    "net_taxes_received": 3433783,
+    "net_public_gain_vs_baseline": 3433783
+   }
+  }
+ },
+ "20-388": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 78668,
+    "taxes_with_project": 495793,
+    "incentive_paid": 446169,
+    "net_taxes_received": 49624,
+    "net_public_gain_vs_baseline": -29044
+   },
+   "20": {
+    "taxes_without_project": 157336,
+    "taxes_with_project": 1100132,
+    "incentive_paid": 990119,
+    "net_taxes_received": 110013,
+    "net_public_gain_vs_baseline": -47323
+   },
+   "30": {
+    "taxes_without_project": 236004,
+    "taxes_with_project": 3203684,
+    "incentive_paid": 990119,
+    "net_taxes_received": 2213565,
+    "net_public_gain_vs_baseline": 1977561
+   }
+  }
+ },
+ "20-429": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 71624,
+    "taxes_with_project": 778185,
+    "incentive_paid": 501964,
+    "net_taxes_received": 276221,
+    "net_public_gain_vs_baseline": 204597
+   },
+   "20": {
+    "taxes_without_project": 158923,
+    "taxes_with_project": 1947397,
+    "incentive_paid": 730518,
+    "net_taxes_received": 1216879,
+    "net_public_gain_vs_baseline": 1057956
+   },
+   "30": {
+    "taxes_without_project": 265327,
+    "taxes_with_project": 3376847,
+    "incentive_paid": 730518,
+    "net_taxes_received": 2646329,
+    "net_public_gain_vs_baseline": 2381002
+   }
+  }
+ },
+ "20-461": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 500696,
+    "taxes_with_project": 3961447,
+    "incentive_paid": 2788095,
+    "net_taxes_received": 1173352,
+    "net_public_gain_vs_baseline": 672656
+   },
+   "20": {
+    "taxes_without_project": 1110969,
+    "taxes_with_project": 9453297,
+    "incentive_paid": 5153359,
+    "net_taxes_received": 4299938,
+    "net_public_gain_vs_baseline": 3188969
+   },
+   "30": {
+    "taxes_without_project": 1854798,
+    "taxes_with_project": 15942085,
+    "incentive_paid": 5153359,
+    "net_taxes_received": 10788726,
+    "net_public_gain_vs_baseline": 8933928
+   }
+  }
+ },
+ "20-463": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 32661,
+    "taxes_with_project": 4381239,
+    "incentive_paid": 3777313,
+    "net_taxes_received": 603926,
+    "net_public_gain_vs_baseline": 571265
+   },
+   "20": {
+    "taxes_without_project": 68587,
+    "taxes_with_project": 10248821,
+    "incentive_paid": 4711834,
+    "net_taxes_received": 5536987,
+    "net_public_gain_vs_baseline": 5468400
+   },
+   "30": {
+    "taxes_without_project": 108107,
+    "taxes_with_project": 17400512,
+    "incentive_paid": 4711834,
+    "net_taxes_received": 12688678,
+    "net_public_gain_vs_baseline": 12580571
+   }
+  }
+ },
+ "20-487": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 204205,
+    "taxes_with_project": 735847,
+    "incentive_paid": 335693,
+    "net_taxes_received": 400154,
+    "net_public_gain_vs_baseline": 195949
+   },
+   "20": {
+    "taxes_without_project": 420284,
+    "taxes_with_project": 1720940,
+    "incentive_paid": 645161,
+    "net_taxes_received": 1075779,
+    "net_public_gain_vs_baseline": 655495
+   },
+   "30": {
+    "taxes_without_project": 638651,
+    "taxes_with_project": 2881701,
+    "incentive_paid": 645161,
+    "net_taxes_received": 2236540,
+    "net_public_gain_vs_baseline": 1597889
+   }
+  }
+ },
+ "20-506": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 660318,
+    "taxes_with_project": 1760737,
+    "incentive_paid": 792332,
+    "net_taxes_received": 968406,
+    "net_public_gain_vs_baseline": 308088
+   },
+   "20": {
+    "taxes_without_project": 1506284,
+    "taxes_with_project": 3672022,
+    "incentive_paid": 1016267,
+    "net_taxes_received": 2655755,
+    "net_public_gain_vs_baseline": 1149471
+   }
+  }
+ },
+ "20-507": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 396443,
+    "taxes_with_project": 1091485,
+    "incentive_paid": 518278,
+    "net_taxes_received": 573207,
+    "net_public_gain_vs_baseline": 176764
+   },
+   "30": {
+    "taxes_without_project": 661874,
+    "taxes_with_project": 1734277,
+    "incentive_paid": 518278,
+    "net_taxes_received": 1215999,
+    "net_public_gain_vs_baseline": 554125
+   }
+  }
+ },
+ "20-515": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 74757,
+    "taxes_with_project": 201939,
+    "incentive_paid": 89217,
+    "net_taxes_received": 112722,
+    "net_public_gain_vs_baseline": 37965
+   },
+   "20": {
+    "taxes_without_project": 165873,
+    "taxes_with_project": 578990,
+    "incentive_paid": 166720,
+    "net_taxes_received": 412270,
+    "net_public_gain_vs_baseline": 246397
+   },
+   "30": {
+    "taxes_without_project": 276931,
+    "taxes_with_project": 1044179,
+    "incentive_paid": 166720,
+    "net_taxes_received": 877459,
+    "net_public_gain_vs_baseline": 600528
+   }
+  }
+ },
+ "20-531": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 1471563,
+    "taxes_with_project": 4185181,
+    "incentive_paid": 2400000,
+    "net_taxes_received": 1785181,
+    "net_public_gain_vs_baseline": 313618
+   },
+   "30": {
+    "taxes_without_project": 2484699,
+    "taxes_with_project": 8727605,
+    "incentive_paid": 2400000,
+    "net_taxes_received": 6327605,
+    "net_public_gain_vs_baseline": 3842906
+   }
+  }
+ },
+ "20-563": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 1424997,
+    "incentive_paid": 922401,
+    "net_taxes_received": 502596,
+    "net_public_gain_vs_baseline": 502596
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 3526141,
+    "incentive_paid": 1512186,
+    "net_taxes_received": 2013955,
+    "net_public_gain_vs_baseline": 2013955
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 6091852,
+    "incentive_paid": 1512186,
+    "net_taxes_received": 4579666,
+    "net_public_gain_vs_baseline": 4579666
+   }
+  }
+ },
+ "20-564": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 500696,
+    "taxes_with_project": 3961447,
+    "incentive_paid": 2788095,
+    "net_taxes_received": 1173352,
+    "net_public_gain_vs_baseline": 672656
+   },
+   "20": {
+    "taxes_without_project": 1110969,
+    "taxes_with_project": 9453297,
+    "incentive_paid": 5153359,
+    "net_taxes_received": 4299938,
+    "net_public_gain_vs_baseline": 3188969
+   },
+   "30": {
+    "taxes_without_project": 1854798,
+    "taxes_with_project": 15942085,
+    "incentive_paid": 5153359,
+    "net_taxes_received": 10788726,
+    "net_public_gain_vs_baseline": 8933928
+   }
+  }
+ },
+ "20-565": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 71624,
+    "taxes_with_project": 800380,
+    "incentive_paid": 554753,
+    "net_taxes_received": 245627,
+    "net_public_gain_vs_baseline": 174003
+   },
+   "20": {
+    "taxes_without_project": 158923,
+    "taxes_with_project": 1969592,
+    "incentive_paid": 887105,
+    "net_taxes_received": 1082487,
+    "net_public_gain_vs_baseline": 923564
+   },
+   "30": {
+    "taxes_without_project": 265327,
+    "taxes_with_project": 3399042,
+    "incentive_paid": 887105,
+    "net_taxes_received": 2511937,
+    "net_public_gain_vs_baseline": 2246610
+   }
+  }
+ },
+ "21-011": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 1471563,
+    "taxes_with_project": 4185181,
+    "incentive_paid": 2400000,
+    "net_taxes_received": 1785181,
+    "net_public_gain_vs_baseline": 313618
+   },
+   "30": {
+    "taxes_without_project": 2484699,
+    "taxes_with_project": 8727605,
+    "incentive_paid": 2400000,
+    "net_taxes_received": 6327605,
+    "net_public_gain_vs_baseline": 3842906
+   }
+  }
+ },
+ "21-032": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 71125,
+    "taxes_with_project": 541785,
+    "incentive_paid": 347941,
+    "net_taxes_received": 193844,
+    "net_public_gain_vs_baseline": 122719
+   },
+   "20": {
+    "taxes_without_project": 139191,
+    "taxes_with_project": 1202138,
+    "incentive_paid": 534012,
+    "net_taxes_received": 668126,
+    "net_public_gain_vs_baseline": 528935
+   },
+   "30": {
+    "taxes_without_project": 219720,
+    "taxes_with_project": 2003110,
+    "incentive_paid": 534012,
+    "net_taxes_received": 1469098,
+    "net_public_gain_vs_baseline": 1249378
+   }
+  }
+ },
+ "21-035": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 79651,
+    "taxes_with_project": 974303,
+    "incentive_paid": 749928,
+    "net_taxes_received": 224375,
+    "net_public_gain_vs_baseline": 144724
+   },
+   "20": {
+    "taxes_without_project": 176124,
+    "taxes_with_project": 2161831,
+    "incentive_paid": 1671037,
+    "net_taxes_received": 490794,
+    "net_public_gain_vs_baseline": 314670
+   },
+   "30": {
+    "taxes_without_project": 291963,
+    "taxes_with_project": 3591354,
+    "incentive_paid": 1671037,
+    "net_taxes_received": 1920317,
+    "net_public_gain_vs_baseline": 1628354
+   }
+  }
+ },
+ "21-044": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 74757,
+    "taxes_with_project": 201939,
+    "incentive_paid": 89217,
+    "net_taxes_received": 112722,
+    "net_public_gain_vs_baseline": 37965
+   },
+   "20": {
+    "taxes_without_project": 165873,
+    "taxes_with_project": 578990,
+    "incentive_paid": 166720,
+    "net_taxes_received": 412270,
+    "net_public_gain_vs_baseline": 246397
+   },
+   "30": {
+    "taxes_without_project": 276931,
+    "taxes_with_project": 1044179,
+    "incentive_paid": 166720,
+    "net_taxes_received": 877459,
+    "net_public_gain_vs_baseline": 600528
+   }
+  }
+ },
+ "21-059": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 32661,
+    "taxes_with_project": 4381239,
+    "incentive_paid": 3777313,
+    "net_taxes_received": 603926,
+    "net_public_gain_vs_baseline": 571265
+   },
+   "20": {
+    "taxes_without_project": 68587,
+    "taxes_with_project": 10248821,
+    "incentive_paid": 4711834,
+    "net_taxes_received": 5536987,
+    "net_public_gain_vs_baseline": 5468400
+   },
+   "30": {
+    "taxes_without_project": 108107,
+    "taxes_with_project": 17400512,
+    "incentive_paid": 4711834,
+    "net_taxes_received": 12688678,
+    "net_public_gain_vs_baseline": 12580571
+   }
+  }
+ },
+ "21-064": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 296368,
+    "taxes_with_project": 1759659,
+    "incentive_paid": 831473,
+    "net_taxes_received": 938186,
+    "net_public_gain_vs_baseline": 641818
+   },
+   "30": {
+    "taxes_without_project": 494796,
+    "taxes_with_project": 3134511,
+    "incentive_paid": 831473,
+    "net_taxes_received": 2303038,
+    "net_public_gain_vs_baseline": 1808242
+   }
+  }
+ },
+ "21-082": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 202261,
+    "taxes_with_project": 1294280,
+    "incentive_paid": 816315,
+    "net_taxes_received": 477964,
+    "net_public_gain_vs_baseline": 275703
+   },
+   "20": {
+    "taxes_without_project": 448785,
+    "taxes_with_project": 3228686,
+    "incentive_paid": 816335,
+    "net_taxes_received": 2412371,
+    "net_public_gain_vs_baseline": 1963586
+   },
+   "30": {
+    "taxes_without_project": 749262,
+    "taxes_with_project": 5586433,
+    "incentive_paid": 816335,
+    "net_taxes_received": 4770118,
+    "net_public_gain_vs_baseline": 4020856
+   }
+  }
+ },
+ "21-086": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 1471563,
+    "taxes_with_project": 4185181,
+    "incentive_paid": 2400000,
+    "net_taxes_received": 1785181,
+    "net_public_gain_vs_baseline": 313618
+   },
+   "30": {
+    "taxes_without_project": 2484699,
+    "taxes_with_project": 8727605,
+    "incentive_paid": 2400000,
+    "net_taxes_received": 6327605,
+    "net_public_gain_vs_baseline": 3842906
+   }
+  }
+ },
+ "21-119": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 71125,
+    "taxes_with_project": 541785,
+    "incentive_paid": 347941,
+    "net_taxes_received": 193844,
+    "net_public_gain_vs_baseline": 122719
+   },
+   "20": {
+    "taxes_without_project": 139191,
+    "taxes_with_project": 1202138,
+    "incentive_paid": 534012,
+    "net_taxes_received": 668126,
+    "net_public_gain_vs_baseline": 528935
+   },
+   "30": {
+    "taxes_without_project": 219720,
+    "taxes_with_project": 2003110,
+    "incentive_paid": 534012,
+    "net_taxes_received": 1469098,
+    "net_public_gain_vs_baseline": 1249378
+   }
+  }
+ },
+ "21-120": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 79651,
+    "taxes_with_project": 974303,
+    "incentive_paid": 749928,
+    "net_taxes_received": 224375,
+    "net_public_gain_vs_baseline": 144724
+   },
+   "20": {
+    "taxes_without_project": 176124,
+    "taxes_with_project": 2161831,
+    "incentive_paid": 1671037,
+    "net_taxes_received": 490794,
+    "net_public_gain_vs_baseline": 314670
+   },
+   "30": {
+    "taxes_without_project": 291963,
+    "taxes_with_project": 3591354,
+    "incentive_paid": 1671037,
+    "net_taxes_received": 1920317,
+    "net_public_gain_vs_baseline": 1628354
+   }
+  }
+ },
+ "21-155": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 133799,
+    "taxes_with_project": 556439,
+    "incentive_paid": 396322,
+    "net_taxes_received": 160117,
+    "net_public_gain_vs_baseline": 26318
+   },
+   "20": {
+    "taxes_without_project": 296880,
+    "taxes_with_project": 1645981,
+    "incentive_paid": 847487,
+    "net_taxes_received": 798494,
+    "net_public_gain_vs_baseline": 501614
+   },
+   "30": {
+    "taxes_without_project": 495651,
+    "taxes_with_project": 3006760,
+    "incentive_paid": 847487,
+    "net_taxes_received": 2159272,
+    "net_public_gain_vs_baseline": 1663621
+   }
+  }
+ },
+ "21-166": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 690344,
+    "taxes_with_project": 8384468,
+    "incentive_paid": 4300997,
+    "net_taxes_received": 4083471,
+    "net_public_gain_vs_baseline": 3393127
+   },
+   "20": {
+    "taxes_without_project": 1531769,
+    "taxes_with_project": 22131058,
+    "incentive_paid": 4300997,
+    "net_taxes_received": 17830061,
+    "net_public_gain_vs_baseline": 16298292
+   },
+   "30": {
+    "taxes_without_project": 2557338,
+    "taxes_with_project": 38886061,
+    "incentive_paid": 4300997,
+    "net_taxes_received": 34585064,
+    "net_public_gain_vs_baseline": 32027726
+   }
+  }
+ },
+ "21-167": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 176240,
+    "taxes_with_project": 424178,
+    "incentive_paid": 402558,
+    "net_taxes_received": 21620,
+    "net_public_gain_vs_baseline": -154620
+   },
+   "20": {
+    "taxes_without_project": 380424,
+    "taxes_with_project": 1058286,
+    "incentive_paid": 507940,
+    "net_taxes_received": 550346,
+    "net_public_gain_vs_baseline": 169922
+   },
+   "30": {
+    "taxes_without_project": 605887,
+    "taxes_with_project": 1831166,
+    "incentive_paid": 507940,
+    "net_taxes_received": 1323226,
+    "net_public_gain_vs_baseline": 717339
+   }
+  }
+ },
+ "21-189": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 202261,
+    "taxes_with_project": 1294280,
+    "incentive_paid": 816315,
+    "net_taxes_received": 477964,
+    "net_public_gain_vs_baseline": 275703
+   },
+   "20": {
+    "taxes_without_project": 448785,
+    "taxes_with_project": 3228686,
+    "incentive_paid": 816315,
+    "net_taxes_received": 2412371,
+    "net_public_gain_vs_baseline": 1963586
+   },
+   "30": {
+    "taxes_without_project": 749262,
+    "taxes_with_project": 5586444,
+    "incentive_paid": 816315,
+    "net_taxes_received": 4770118,
+    "net_public_gain_vs_baseline": 4020856
+   }
+  }
+ },
+ "21-217": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 85421,
+    "taxes_with_project": 619458,
+    "incentive_paid": 164000,
+    "net_taxes_received": 455458,
+    "net_public_gain_vs_baseline": 370037
+   },
+   "30": {
+    "taxes_without_project": 142613,
+    "taxes_with_project": 1351103,
+    "incentive_paid": 164000,
+    "net_taxes_received": 1187103,
+    "net_public_gain_vs_baseline": 1044490
+   }
+  }
+ },
+ "21-285": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 85421,
+    "taxes_with_project": 619458,
+    "incentive_paid": 164000,
+    "net_taxes_received": 455458,
+    "net_public_gain_vs_baseline": 370037
+   },
+   "30": {
+    "taxes_without_project": 142613,
+    "taxes_with_project": 1351103,
+    "incentive_paid": 164000,
+    "net_taxes_received": 1187103,
+    "net_public_gain_vs_baseline": 1044490
+   }
+  }
+ },
+ "21-290": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 1531769,
+    "taxes_with_project": 22131058,
+    "incentive_paid": 4300997,
+    "net_taxes_received": 17830061,
+    "net_public_gain_vs_baseline": 16298292
+   },
+   "30": {
+    "taxes_without_project": 2557338,
+    "taxes_with_project": 38886061,
+    "incentive_paid": 4300997,
+    "net_taxes_received": 34585064,
+    "net_public_gain_vs_baseline": 32027726
+   }
+  }
+ },
+ "21-304": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 706214,
+    "incentive_paid": 316033,
+    "net_taxes_received": 390180,
+    "net_public_gain_vs_baseline": 390180
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 4554580,
+    "incentive_paid": 2014435,
+    "net_taxes_received": 2540145,
+    "net_public_gain_vs_baseline": 2540145
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 9234661,
+    "incentive_paid": 2014435,
+    "net_taxes_received": 7220226,
+    "net_public_gain_vs_baseline": 7220226
+   }
+  }
+ },
+ "21-305": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 66636,
+    "taxes_with_project": 3747185,
+    "incentive_paid": 1200337,
+    "net_taxes_received": 2546848,
+    "net_public_gain_vs_baseline": 2480212
+   }
+  }
+ },
+ "21-459": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 1253755,
+    "taxes_with_project": 3388996,
+    "incentive_paid": 275000,
+    "net_taxes_received": 3113996,
+    "net_public_gain_vs_baseline": 1860241
+   },
+   "20": {
+    "taxes_without_project": 3127595,
+    "taxes_with_project": 7209442,
+    "incentive_paid": 275000,
+    "net_taxes_received": 6934442,
+    "net_public_gain_vs_baseline": 3806847
+   },
+   "30": {
+    "taxes_without_project": 5411521,
+    "taxes_with_project": 11713335,
+    "incentive_paid": 275000,
+    "net_taxes_received": 11438335,
+    "net_public_gain_vs_baseline": 6026814
+   }
+  }
+ },
+ "21-550": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 2593124,
+    "taxes_with_project": 16605960,
+    "incentive_paid": 4824132,
+    "net_taxes_received": 11781828,
+    "net_public_gain_vs_baseline": 9188704
+   }
+  }
+ },
+ "22-106": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 1253755,
+    "taxes_with_project": 2586223,
+    "incentive_paid": 275000,
+    "net_taxes_received": 2311223,
+    "net_public_gain_vs_baseline": 1057468
+   },
+   "20": {
+    "taxes_without_project": 3127595,
+    "taxes_with_project": 5424603,
+    "incentive_paid": 275000,
+    "net_taxes_received": 5149603,
+    "net_public_gain_vs_baseline": 2022008
+   },
+   "30": {
+    "taxes_without_project": 5411521,
+    "taxes_with_project": 8731507,
+    "incentive_paid": 275000,
+    "net_taxes_received": 8456507,
+    "net_public_gain_vs_baseline": 3044986
+   }
+  }
+ },
+ "22-223": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 68993,
+    "taxes_with_project": 553237,
+    "incentive_paid": 354544,
+    "net_taxes_received": 198694,
+    "net_public_gain_vs_baseline": 129701
+   },
+   "20": {
+    "taxes_without_project": 153010,
+    "taxes_with_project": 1365831,
+    "incentive_paid": 804163,
+    "net_taxes_received": 561668,
+    "net_public_gain_vs_baseline": 408658
+   },
+   "30": {
+    "taxes_without_project": 255413,
+    "taxes_with_project": 2354044,
+    "incentive_paid": 851724,
+    "net_taxes_received": 1502320,
+    "net_public_gain_vs_baseline": 1246907
+   }
+  }
+ },
+ "22-225": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 1072524,
+    "taxes_with_project": 5873388,
+    "incentive_paid": 3794959,
+    "net_taxes_received": 2078429,
+    "net_public_gain_vs_baseline": 1005905
+   },
+   "20": {
+    "taxes_without_project": 2379768,
+    "taxes_with_project": 12863334,
+    "incentive_paid": 8332437,
+    "net_taxes_received": 4530897,
+    "net_public_gain_vs_baseline": 2151129
+   },
+   "30": {
+    "taxes_without_project": 3973100,
+    "taxes_with_project": 21136503,
+    "incentive_paid": 8332437,
+    "net_taxes_received": 12804066,
+    "net_public_gain_vs_baseline": 8830966
+   }
+  }
+ },
+ "22-227": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 346086,
+    "taxes_with_project": 1320534,
+    "incentive_paid": 949490,
+    "net_taxes_received": 371044,
+    "net_public_gain_vs_baseline": 24958
+   },
+   "30": {
+    "taxes_without_project": 598816,
+    "taxes_with_project": 2196292,
+    "incentive_paid": 949490,
+    "net_taxes_received": 1246802,
+    "net_public_gain_vs_baseline": 647986
+   }
+  }
+ },
+ "22-254": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 8716485,
+    "incentive_paid": 7264945,
+    "net_taxes_received": 1451540,
+    "net_public_gain_vs_baseline": 1451540
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 19395794,
+    "incentive_paid": 10221534,
+    "net_taxes_received": 9174260,
+    "net_public_gain_vs_baseline": 9174260
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 32412247,
+    "incentive_paid": 10221534,
+    "net_taxes_received": 22190713,
+    "net_public_gain_vs_baseline": 22190713
+   }
+  }
+ },
+ "22-274": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 68993,
+    "taxes_with_project": 553237,
+    "incentive_paid": 354544,
+    "net_taxes_received": 198694,
+    "net_public_gain_vs_baseline": 129701
+   },
+   "20": {
+    "taxes_without_project": 153010,
+    "taxes_with_project": 1365831,
+    "incentive_paid": 804163,
+    "net_taxes_received": 561668,
+    "net_public_gain_vs_baseline": 408658
+   },
+   "30": {
+    "taxes_without_project": 255413,
+    "taxes_with_project": 2354044,
+    "incentive_paid": 851724,
+    "net_taxes_received": 1502320,
+    "net_public_gain_vs_baseline": 1246907
+   }
+  }
+ },
+ "22-275": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 2593124,
+    "taxes_with_project": 16605960,
+    "incentive_paid": 4824132,
+    "net_taxes_received": 11781828,
+    "net_public_gain_vs_baseline": 9188704
+   }
+  }
+ },
+ "22-346": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 1672443,
+    "incentive_paid": 1141934,
+    "net_taxes_received": 530509,
+    "net_public_gain_vs_baseline": 530509
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 3703482,
+    "incentive_paid": 1803111,
+    "net_taxes_received": 1900370,
+    "net_public_gain_vs_baseline": 1900370
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 6077783,
+    "incentive_paid": 1803111,
+    "net_taxes_received": 4274672,
+    "net_public_gain_vs_baseline": 4274672
+   }
+  }
+ },
+ "22-350": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 11541,
+    "taxes_with_project": 10084606,
+    "incentive_paid": 5155605,
+    "net_taxes_received": 4929001,
+    "net_public_gain_vs_baseline": 4917460
+   },
+   "20": {
+    "taxes_without_project": 28789,
+    "taxes_with_project": 23872996,
+    "incentive_paid": 9016148,
+    "net_taxes_received": 14856849,
+    "net_public_gain_vs_baseline": 14828060
+   },
+   "30": {
+    "taxes_without_project": 49813,
+    "taxes_with_project": 40596252,
+    "incentive_paid": 9016148,
+    "net_taxes_received": 31580104,
+    "net_public_gain_vs_baseline": 31530291
+   }
+  }
+ },
+ "22-357": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 813207,
+    "taxes_with_project": 21237122,
+    "incentive_paid": 5063720,
+    "net_taxes_received": 16173402,
+    "net_public_gain_vs_baseline": 15360195
+   }
+  }
+ },
+ "22-405": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 598816,
+    "taxes_with_project": 2196292,
+    "incentive_paid": 949490,
+    "net_taxes_received": 1246802,
+    "net_public_gain_vs_baseline": 647986
+   }
+  }
+ },
+ "22-469": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 74398,
+    "taxes_with_project": 469169,
+    "incentive_paid": 210120,
+    "net_taxes_received": 259049,
+    "net_public_gain_vs_baseline": 184651
+   },
+   "20": {
+    "taxes_without_project": 185592,
+    "taxes_with_project": 3197775,
+    "incentive_paid": 1714433,
+    "net_taxes_received": 1483342,
+    "net_public_gain_vs_baseline": 1297750
+   },
+   "30": {
+    "taxes_without_project": 321121,
+    "taxes_with_project": 6518914,
+    "incentive_paid": 1714433,
+    "net_taxes_received": 4804480,
+    "net_public_gain_vs_baseline": 4483359
+   }
+  }
+ },
+ "22-498": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 171629,
+    "taxes_with_project": 3649888,
+    "incentive_paid": 2845907,
+    "net_taxes_received": 803981,
+    "net_public_gain_vs_baseline": 632352
+   },
+   "20": {
+    "taxes_without_project": 380819,
+    "taxes_with_project": 8098553,
+    "incentive_paid": 5825547,
+    "net_taxes_received": 2273005,
+    "net_public_gain_vs_baseline": 1892186
+   },
+   "30": {
+    "taxes_without_project": 635789,
+    "taxes_with_project": 13520799,
+    "incentive_paid": 5825547,
+    "net_taxes_received": 7695251,
+    "net_public_gain_vs_baseline": 7059462
+   }
+  }
+ },
+ "22-547": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 844264,
+    "taxes_with_project": 23365813,
+    "incentive_paid": 9097353,
+    "net_taxes_received": 14268460,
+    "net_public_gain_vs_baseline": 13424196
+   },
+   "30": {
+    "taxes_without_project": 1409527,
+    "taxes_with_project": 47914710,
+    "incentive_paid": 9097353,
+    "net_taxes_received": 38817356,
+    "net_public_gain_vs_baseline": 37407829
+   }
+  }
+ },
+ "22-579": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 28890,
+    "taxes_with_project": 205748,
+    "incentive_paid": 160000,
+    "net_taxes_received": 45748,
+    "net_public_gain_vs_baseline": 16858
+   },
+   "30": {
+    "taxes_without_project": 51203,
+    "taxes_with_project": 422380,
+    "incentive_paid": 160000,
+    "net_taxes_received": 262380,
+    "net_public_gain_vs_baseline": 211177
+   }
+  }
+ },
+ "23-046": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 188406,
+    "taxes_with_project": 1672660,
+    "incentive_paid": 700322,
+    "net_taxes_received": 972338,
+    "net_public_gain_vs_baseline": 783932
+   },
+   "20": {
+    "taxes_without_project": 469994,
+    "taxes_with_project": 10502700,
+    "incentive_paid": 5063720,
+    "net_taxes_received": 5438980,
+    "net_public_gain_vs_baseline": 4968986
+   },
+   "30": {
+    "taxes_without_project": 813207,
+    "taxes_with_project": 21237122,
+    "incentive_paid": 5063720,
+    "net_taxes_received": 16173402,
+    "net_public_gain_vs_baseline": 15360195
+   }
+  }
+ },
+ "23-070": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 74398,
+    "taxes_with_project": 469169,
+    "incentive_paid": 210120,
+    "net_taxes_received": 259049,
+    "net_public_gain_vs_baseline": 184651
+   },
+   "20": {
+    "taxes_without_project": 185592,
+    "taxes_with_project": 3197775,
+    "incentive_paid": 1714433,
+    "net_taxes_received": 1483342,
+    "net_public_gain_vs_baseline": 1297750
+   },
+   "30": {
+    "taxes_without_project": 321121,
+    "taxes_with_project": 6518914,
+    "incentive_paid": 1714433,
+    "net_taxes_received": 4804480,
+    "net_public_gain_vs_baseline": 4483359
+   }
+  }
+ },
+ "23-124": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 207927,
+    "taxes_with_project": 1684279,
+    "incentive_paid": 882873,
+    "net_taxes_received": 801406,
+    "net_public_gain_vs_baseline": 593479
+   },
+   "20": {
+    "taxes_without_project": 461358,
+    "taxes_with_project": 12492121,
+    "incentive_paid": 8858385,
+    "net_taxes_received": 3633736,
+    "net_public_gain_vs_baseline": 3172378
+   },
+   "30": {
+    "taxes_without_project": 770251,
+    "taxes_with_project": 25665236,
+    "incentive_paid": 8858385,
+    "net_taxes_received": 16806851,
+    "net_public_gain_vs_baseline": 16036600
+   }
+  }
+ },
+ "23-131": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 671586,
+    "taxes_with_project": 2916491,
+    "incentive_paid": 2697084,
+    "net_taxes_received": 219407,
+    "net_public_gain_vs_baseline": -452179
+   },
+   "20": {
+    "taxes_without_project": 1490148,
+    "taxes_with_project": 7063871,
+    "incentive_paid": 4047503,
+    "net_taxes_received": 3016368,
+    "net_public_gain_vs_baseline": 1526220
+   },
+   "30": {
+    "taxes_without_project": 2487850,
+    "taxes_with_project": 12117493,
+    "incentive_paid": 4047503,
+    "net_taxes_received": 8069990,
+    "net_public_gain_vs_baseline": 5582140
+   }
+  }
+ },
+ "23-161": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 207927,
+    "taxes_with_project": 1684279,
+    "incentive_paid": 882873,
+    "net_taxes_received": 801406,
+    "net_public_gain_vs_baseline": 593479
+   },
+   "20": {
+    "taxes_without_project": 461358,
+    "taxes_with_project": 12492121,
+    "incentive_paid": 8858385,
+    "net_taxes_received": 3633736,
+    "net_public_gain_vs_baseline": 3172378
+   },
+   "30": {
+    "taxes_without_project": 770251,
+    "taxes_with_project": 25665236,
+    "incentive_paid": 8858385,
+    "net_taxes_received": 16806851,
+    "net_public_gain_vs_baseline": 16036600
+   }
+  }
+ },
+ "23-311": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 207927,
+    "taxes_with_project": 1684279,
+    "incentive_paid": 882873,
+    "net_taxes_received": 801406,
+    "net_public_gain_vs_baseline": 593479
+   },
+   "20": {
+    "taxes_without_project": 461358,
+    "taxes_with_project": 12492121,
+    "incentive_paid": 8858385,
+    "net_taxes_received": 3633736,
+    "net_public_gain_vs_baseline": 3172378
+   },
+   "30": {
+    "taxes_without_project": 770251,
+    "taxes_with_project": 25665236,
+    "incentive_paid": 8858385,
+    "net_taxes_received": 16806851,
+    "net_public_gain_vs_baseline": 16036600
+   }
+  }
+ },
+ "23-313": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 395622,
+    "taxes_with_project": 2012526,
+    "incentive_paid": 773658,
+    "net_taxes_received": 1238868,
+    "net_public_gain_vs_baseline": 843246
+   }
+  }
+ },
+ "23-356": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 244495,
+    "taxes_with_project": 2012526,
+    "incentive_paid": 809530,
+    "net_taxes_received": 1202995,
+    "net_public_gain_vs_baseline": 958500
+   }
+  }
+ },
+ "23-357": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 42214,
+    "taxes_with_project": 618092,
+    "incentive_paid": 300000,
+    "net_taxes_received": 318092,
+    "net_public_gain_vs_baseline": 275878
+   },
+   "30": {
+    "taxes_without_project": 71217,
+    "taxes_with_project": 964335,
+    "incentive_paid": 300000,
+    "net_taxes_received": 664335,
+    "net_public_gain_vs_baseline": 593118
+   }
+  }
+ },
+ "23-360": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 2918470,
+    "taxes_with_project": 15899993,
+    "incentive_paid": 6429526,
+    "net_taxes_received": 9470466,
+    "net_public_gain_vs_baseline": 6551996
+   }
+  }
+ },
+ "23-406": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 42214,
+    "taxes_with_project": 618092,
+    "incentive_paid": 300000,
+    "net_taxes_received": 318092,
+    "net_public_gain_vs_baseline": 275878
+   },
+   "30": {
+    "taxes_without_project": 71217,
+    "taxes_with_project": 964335,
+    "incentive_paid": 300000,
+    "net_taxes_received": 664335,
+    "net_public_gain_vs_baseline": 593118
+   }
+  }
+ },
+ "23-445": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 42214,
+    "taxes_with_project": 618092,
+    "incentive_paid": 300000,
+    "net_taxes_received": 318092,
+    "net_public_gain_vs_baseline": 275878
+   },
+   "30": {
+    "taxes_without_project": 71217,
+    "taxes_with_project": 964335,
+    "incentive_paid": 300000,
+    "net_taxes_received": 664335,
+    "net_public_gain_vs_baseline": 593118
+   }
+  }
+ },
+ "23-512": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 224554,
+    "taxes_with_project": 4636614,
+    "incentive_paid": 3339237,
+    "net_taxes_received": 1297377,
+    "net_public_gain_vs_baseline": 1072823
+   },
+   "30": {
+    "taxes_without_project": 388535,
+    "taxes_with_project": 7736492,
+    "incentive_paid": 3339237,
+    "net_taxes_received": 4397255,
+    "net_public_gain_vs_baseline": 4008720
+   }
+  }
+ },
+ "23-513": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 1329043,
+    "taxes_with_project": 30897559,
+    "incentive_paid": 10617453,
+    "net_taxes_received": 20280107,
+    "net_public_gain_vs_baseline": 18951064
+   }
+  }
+ },
+ "24-024": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 1329043,
+    "taxes_with_project": 30897559,
+    "incentive_paid": 10617453,
+    "net_taxes_received": 20280107,
+    "net_public_gain_vs_baseline": 18951064
+   }
+  }
+ },
+ "24-063": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 501725,
+    "taxes_with_project": 26798748,
+    "incentive_paid": 0,
+    "net_taxes_received": 26798748,
+    "net_public_gain_vs_baseline": 26297023
+   },
+   "30": {
+    "taxes_without_project": 837154,
+    "taxes_with_project": 44741375,
+    "incentive_paid": 0,
+    "net_taxes_received": 44741375,
+    "net_public_gain_vs_baseline": 43904221
+   }
+  }
+ },
+ "24-064": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 363974,
+    "taxes_with_project": 1688903,
+    "incentive_paid": 460000,
+    "net_taxes_received": 1228903,
+    "net_public_gain_vs_baseline": 864929
+   }
+  }
+ },
+ "24-138": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 501725,
+    "taxes_with_project": 28361271,
+    "incentive_paid": 0,
+    "net_taxes_received": 28361271,
+    "net_public_gain_vs_baseline": 27859546
+   },
+   "30": {
+    "taxes_without_project": 837154,
+    "taxes_with_project": 47350058,
+    "incentive_paid": 0,
+    "net_taxes_received": 47350058,
+    "net_public_gain_vs_baseline": 46512904
+   }
+  }
+ },
+ "24-220": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 10783972,
+    "taxes_with_project": 25178515,
+    "incentive_paid": 5569449,
+    "net_taxes_received": 19609066,
+    "net_public_gain_vs_baseline": 8825094
+   }
+  }
+ },
+ "24-274": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 10783972,
+    "taxes_with_project": 25178515,
+    "incentive_paid": 5569449,
+    "net_taxes_received": 19609066,
+    "net_public_gain_vs_baseline": 8825094
+   }
+  }
+ },
+ "24-378": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 14561055,
+    "taxes_with_project": 32775803,
+    "incentive_paid": 9295148,
+    "net_taxes_received": 23480655,
+    "net_public_gain_vs_baseline": 8919600
+   }
+  }
+ },
+ "24-468": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 62872,
+    "taxes_with_project": 1240268,
+    "incentive_paid": 382579,
+    "net_taxes_received": 857689,
+    "net_public_gain_vs_baseline": 794817
+   }
+  }
+ },
+ "24-536": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 502064,
+    "taxes_with_project": 22119878,
+    "incentive_paid": 6787947,
+    "net_taxes_received": 15331931,
+    "net_public_gain_vs_baseline": 14829867
+   },
+   "30": {
+    "taxes_without_project": 83821,
+    "taxes_with_project": 44200879,
+    "incentive_paid": 6787947,
+    "net_taxes_received": 37412932,
+    "net_public_gain_vs_baseline": 37329111
+   }
+  }
+ },
+ "25-030": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 13094694,
+    "taxes_with_project": 35067301,
+    "incentive_paid": 15872390,
+    "net_taxes_received": 19194911,
+    "net_public_gain_vs_baseline": 6100217
+   },
+   "30": {
+    "taxes_without_project": 21922504,
+    "taxes_with_project": 58347049,
+    "incentive_paid": 15872390,
+    "net_taxes_received": 42474659,
+    "net_public_gain_vs_baseline": 20552155
+   }
+  }
+ },
+ "25-031": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 250890,
+    "taxes_with_project": 3321965,
+    "incentive_paid": 1143159,
+    "net_taxes_received": 2178806,
+    "net_public_gain_vs_baseline": 1927916
+   }
+  }
+ },
+ "25-033": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 498232,
+    "taxes_with_project": 3148002,
+    "incentive_paid": 300000,
+    "net_taxes_received": 2848002,
+    "net_public_gain_vs_baseline": 2349770
+   },
+   "30": {
+    "taxes_without_project": 831814,
+    "taxes_with_project": 5498803,
+    "incentive_paid": 300000,
+    "net_taxes_received": 5198803,
+    "net_public_gain_vs_baseline": 4366989
+   }
+  }
+ },
+ "25-186": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 498232,
+    "taxes_with_project": 3148002,
+    "incentive_paid": 300000,
+    "net_taxes_received": 2848002,
+    "net_public_gain_vs_baseline": 2349770
+   },
+   "30": {
+    "taxes_without_project": 831814,
+    "taxes_with_project": 5498803,
+    "incentive_paid": 300000,
+    "net_taxes_received": 5198803,
+    "net_public_gain_vs_baseline": 4366989
+   }
+  }
+ },
+ "25-194": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 62872,
+    "taxes_with_project": 1240268,
+    "incentive_paid": 382579,
+    "net_taxes_received": 857689,
+    "net_public_gain_vs_baseline": 794817
+   }
+  }
+ },
+ "25-196": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 14561055,
+    "taxes_with_project": 34365965,
+    "incentive_paid": 10049046,
+    "net_taxes_received": 24316920,
+    "net_public_gain_vs_baseline": 9755865
+   }
+  }
+ },
+ "25-474": {
+  "horizons": {
+   "30": {
+    "taxes_without_project": 4379494,
+    "taxes_with_project": 42715601,
+    "incentive_paid": 15106401,
+    "net_taxes_received": 27609200,
+    "net_public_gain_vs_baseline": 23229706
+   }
+  }
+ },
+ "26-092": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 67727,
+    "taxes_with_project": 899853,
+    "incentive_paid": 602777,
+    "net_taxes_received": 297076,
+    "net_public_gain_vs_baseline": 229349
+   },
+   "20": {
+    "taxes_without_project": 150275,
+    "taxes_with_project": 1993904,
+    "incentive_paid": 954159,
+    "net_taxes_received": 1039745,
+    "net_public_gain_vs_baseline": 889470
+   },
+   "30": {
+    "taxes_without_project": 250890,
+    "taxes_with_project": 3321965,
+    "incentive_paid": 954159,
+    "net_taxes_received": 2367806,
+    "net_public_gain_vs_baseline": 2116916
+   }
+  }
+ },
+ "26-120": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 303769,
+    "taxes_with_project": 610718,
+    "incentive_paid": 262258,
+    "net_taxes_received": 348460,
+    "net_public_gain_vs_baseline": 44691
+   },
+   "20": {
+    "taxes_without_project": 674018,
+    "taxes_with_project": 2060694,
+    "incentive_paid": 262258,
+    "net_taxes_received": 1798435,
+    "net_public_gain_vs_baseline": 1124417
+   },
+   "30": {
+    "taxes_without_project": 1125294,
+    "taxes_with_project": 3826092,
+    "incentive_paid": 262258,
+    "net_taxes_received": 3563834,
+    "net_public_gain_vs_baseline": 2438540
+   }
+  }
+ },
+ "26-169": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 436084,
+    "taxes_with_project": 4548527,
+    "incentive_paid": 3204579,
+    "net_taxes_received": 1343948,
+    "net_public_gain_vs_baseline": 907864
+   },
+   "30": {
+    "taxes_without_project": 728056,
+    "taxes_with_project": 7574382,
+    "incentive_paid": 3204579,
+    "net_taxes_received": 4369803,
+    "net_public_gain_vs_baseline": 3641747
+   }
+  }
+ },
+ "26-182": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 436084,
+    "taxes_with_project": 4548527,
+    "incentive_paid": 3074122,
+    "net_taxes_received": 1474405,
+    "net_public_gain_vs_baseline": 1038321
+   },
+   "30": {
+    "taxes_without_project": 728056,
+    "taxes_with_project": 7574382,
+    "incentive_paid": 3270976,
+    "net_taxes_received": 4303407,
+    "net_public_gain_vs_baseline": 3575351
+   }
+  }
+ },
+ "26-207": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 1258839,
+    "incentive_paid": 727621,
+    "net_taxes_received": 531217,
+    "net_public_gain_vs_baseline": 531217
+   },
+   "20": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 2777176,
+    "incentive_paid": 907638,
+    "net_taxes_received": 1869538,
+    "net_public_gain_vs_baseline": 1869538
+   },
+   "30": {
+    "taxes_without_project": 0,
+    "taxes_with_project": 4521517,
+    "incentive_paid": 907638,
+    "net_taxes_received": 3613879,
+    "net_public_gain_vs_baseline": 3613879
+   }
+  }
+ },
+ "26-229": {
+  "horizons": {
+   "20": {
+    "taxes_without_project": 436084,
+    "taxes_with_project": 4548527,
+    "incentive_paid": 3074122,
+    "net_taxes_received": 1474405,
+    "net_public_gain_vs_baseline": 1038321
+   },
+   "30": {
+    "taxes_without_project": 728056,
+    "taxes_with_project": 7574382,
+    "incentive_paid": 3270976,
+    "net_taxes_received": 4303407,
+    "net_public_gain_vs_baseline": 3575351
+   }
+  }
+ },
+ "26-254": {
+  "horizons": {
+   "10": {
+    "taxes_without_project": 702295,
+    "taxes_with_project": 7082444,
+    "incentive_paid": 4388121,
+    "net_taxes_received": 2694323,
+    "net_public_gain_vs_baseline": 1992028
+   },
+   "20": {
+    "taxes_without_project": 1558286,
+    "taxes_with_project": 15652591,
+    "incentive_paid": 6758220,
+    "net_taxes_received": 8894371,
+    "net_public_gain_vs_baseline": 7336085
+   },
+   "30": {
+    "taxes_without_project": 2601610,
+    "taxes_with_project": 26041042,
+    "incentive_paid": 6758220,
+    "net_taxes_received": 19282822,
+    "net_public_gain_vs_baseline": 16681212
+   }
+  }
+ }
+}

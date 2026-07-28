@@ -1,0 +1,23 @@
+layer,field,type,description
+tif_projects,NAME,C,Project name
+tif_projects,DEVELOPER,C,Developer / owner (counterparty)
+tif_projects,TYPE,C,Project type (classified from item text)
+tif_projects,ADDRESS,C,Project address
+tif_projects,TIF_NPV,N,"TIF incentive, net present value basis (USD)"
+tif_projects,TIF_BASIS,C,How the TIF figure was established
+tif_projects,COST,N,Total project cost as stated (USD)
+tif_projects,TIF_PCT,N,TIF as % of project cost
+tif_projects,NET_GAIN,N,Projected net public gain vs baseline (USD)
+tif_projects,ASSESSED,N,"Current assessed value, Polk assessor (USD)"
+tif_projects,REBATE_PD,N,"Actual TIF rebate paid to developer, Iowa DOM (USD)"
+tif_projects,STATUS,C,built (cert. of completion) | approved
+tif_projects,NBHD,C,Recognized neighborhood
+tif_projects,UR_AREA,C,Urban renewal area / TIF district
+tif_projects,ACTION_DT,C,Final council action date
+tif_projects,SOURCE_URL,C,Source document (council communication PDF)
+tif_neighborhoods,NAME,C,Neighborhood name (NHNAME)
+tif_neighborhoods,PROJECTS,N,TIF projects located in the neighborhood
+tif_neighborhoods,TIF_NPV,N,"Total TIF invested, NPV basis (USD)"
+tif_neighborhoods,COST,N,Total stated project cost (USD)
+tif_neighborhoods,NET_GAIN,N,Total projected net public gain (USD)
+tif_neighborhoods,ASSESSED,N,Total current assessed value of TIF parcels (USD)

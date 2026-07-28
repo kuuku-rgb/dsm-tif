@@ -1,0 +1,15 @@
+metric,value
+window,2016-07-01 .. 2026-07-14
+meetings enumerated,237
+meetings with agenda,230
+meetings with minutes,234
+documents fetched ok/cached,464
+download failures,0
+tier-1 candidates (full extraction),406
+tier-2 candidates (logged only),608
+tier-1 records extracted,406
+"projects (deduped, incentive-related)",202
+non-incentive admin clusters (Actions_long only),21
+projects missing TIF amount,117
+projects missing total cost,80
+projects in Flags_review,53

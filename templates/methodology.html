@@ -1,0 +1,268 @@
+<title>Methodology — Des Moines TIF &amp; Developer Agreements, 2016–2026</title>
+<style>
+  :root{
+    --surface:#faf8f3; --card:#fff; --ink:#211f1a; --ink-2:#57544c; --ink-3:#8c8880;
+    --line:#e7e4db; --line-soft:#f2efe7; --heat:#e4531c; --heat-2:#c84918; --heat-bg:#fbe9df;
+    --flora:#134937; --flora-bg:#e2eee7; --warn:#c98500; --warn-bg:#fbeed6; --code:#f4f1e8;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --surface:#17160f; --card:#201e18; --ink:#f5f2e9; --ink-2:#c6c2b4; --ink-3:#8c887c;
+      --line:#332f25; --line-soft:#26231b; --heat:#ef6a38; --heat-2:#e4531c; --heat-bg:#3a2114;
+      --flora:#7fce93; --flora-bg:#1d3323; --warn:#e0a52a; --warn-bg:#3a2e10; --code:#26231b; }
+  }
+  :root[data-theme="dark"]{ --surface:#17160f; --card:#201e18; --ink:#f5f2e9; --ink-2:#c6c2b4; --ink-3:#8c887c;
+    --line:#332f25; --line-soft:#26231b; --heat:#ef6a38; --heat-2:#e4531c; --heat-bg:#3a2114; --flora:#7fce93; --flora-bg:#1d3323; --warn:#e0a52a; --warn-bg:#3a2e10; --code:#26231b; }
+  :root[data-theme="light"]{ --surface:#faf8f3; --card:#fff; --ink:#211f1a; --ink-2:#57544c; --ink-3:#8c8880;
+    --line:#e7e4db; --line-soft:#f2efe7; --heat:#e4531c; --heat-2:#c84918; --heat-bg:#fbe9df; --flora:#134937; --flora-bg:#e2eee7; --warn:#c98500; --warn-bg:#fbeed6; --code:#f4f1e8; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface);color:var(--ink);font:16px/1.68 system-ui,-apple-system,"Segoe UI",sans-serif;padding:44px 22px 80px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto}
+  .back{font-size:12.5px;color:var(--ink-3);text-decoration:none;display:inline-block;margin-bottom:20px}
+  .back:hover{color:var(--heat)}
+  .eyebrow{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--heat);font-weight:700;margin:0 0 6px}
+  h1{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:clamp(28px,4.5vw,40px);line-height:1.14;margin:0 0 12px;font-weight:600;letter-spacing:-.01em}
+  .lede{font-size:17px;color:var(--ink-2);margin:0 0 8px;line-height:1.6}
+  h2{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:24px;font-weight:600;margin:44px 0 10px;padding-top:22px;border-top:1px solid var(--line);letter-spacing:-.01em}
+  h3{font-size:14px;font-weight:700;margin:26px 0 6px;letter-spacing:.01em}
+  p{margin:0 0 14px}
+  ul,ol{margin:0 0 14px;padding-left:22px} li{margin-bottom:7px}
+  strong{font-weight:650}
+  code{font:12.5px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);padding:1px 5px;border-radius:4px;color:var(--ink-2)}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;margin:6px 0 18px}
+  th{text-align:left;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);font-weight:700;padding:8px 10px;border-bottom:1px solid var(--line)}
+  td{padding:8px 10px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .scroll{overflow-x:auto}
+  .call{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--heat);border-radius:0 9px 9px 0;padding:15px 17px;margin:18px 0}
+  .call.good{border-left-color:var(--flora)}
+  .call.warn{border-left-color:var(--warn)}
+  .call h4{margin:0 0 6px;font-size:13.5px;font-weight:700}
+  .call p{margin:0 0 8px;font-size:14px;color:var(--ink-2)} .call p:last-child{margin:0}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0 0 16px}
+  .steps li{counter-increment:s;position:relative;padding-left:38px;margin-bottom:14px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:25px;height:25px;border-radius:50%;
+    background:var(--heat-bg);color:var(--heat-2);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .steps b{display:block;margin-bottom:1px}
+  .steps span{font-size:14px;color:var(--ink-2)}
+  dl.gloss{margin:0} dl.gloss dt{font-weight:700;font-size:14px;margin-top:14px}
+  dl.gloss dd{margin:2px 0 0;color:var(--ink-2);font-size:14.5px}
+  .tag{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:999px;vertical-align:middle}
+  .tag.ok{background:var(--flora-bg);color:var(--flora)} .tag.no{background:var(--warn-bg);color:var(--warn)}
+  .foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-3);line-height:1.6}
+  @media (max-width:640px){
+    body{ padding:26px 15px 56px; font-size:15.5px; }
+    h2{ font-size:21px; margin:34px 0 8px; padding-top:18px; }
+    .lede{ font-size:15.5px; }
+    .call{ padding:13px 14px; }
+    .steps li{ padding-left:34px; }
+    table{ font-size:12.5px; } th,td{ padding:7px 8px; }
+    .scroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  }
+</style>
+
+<div class="wrap">
+  <a class="back" href="index.html">← Back to overview</a>
+  <p class="eyebrow">City of Des Moines · Tax Increment Financing</p>
+  <h1>Methodology &amp; limitations</h1>
+  <p class="lede" id="lede"></p>
+
+  <h2>What this covers</h2>
+  <p id="scope"></p>
+  <p>A <strong>project</strong> is not the same as a council vote. A single deal typically returns to the
+  council several times — preliminary terms, then final terms, then amendments years later. Those actions are
+  clustered into one project, and the figures reported are the committed terms from the agreement of record,
+  with the full action history kept in the timeline.</p>
+
+  <h2>Sources</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Source</th><th>What it provides</th><th>Role</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Council agendas &amp; minutes</strong><br><span style="color:var(--ink-3);font-size:12px">councildocs.dsm.city</span></td>
+        <td>Item descriptions, developer names, addresses, roll-call numbers, votes, dispositions</td><td>What was decided</td></tr>
+      <tr><td><strong>Council communications</strong><br><span style="color:var(--ink-3);font-size:12px">staff reports attached to items</span></td>
+        <td>Incentive amount &amp; structure, total project cost, urban-renewal area, and the projected
+        taxes-with-vs-without-project tables</td><td>The money</td></tr>
+      <tr><td><strong>Iowa Dept. of Management</strong><br><span style="color:var(--ink-3);font-size:12px">urban-renewal filings</span></td>
+        <td>TIF actually collected and actually rebated, per year, per area</td><td>Independent actuals</td></tr>
+      <tr><td><strong>Polk County Assessor</strong><br><span style="color:var(--ink-3);font-size:12px">parcel roll + geometry</span></td>
+        <td>Current assessed value, year built, TIF-district tag, parcel location</td><td>What exists on the ground</td></tr>
+      <tr><td><strong>City of Des Moines</strong><br><span style="color:var(--ink-3);font-size:12px">neighborhood boundaries</span></td>
+        <td>51 recognized neighborhood polygons</td><td>Geographic grouping</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>How it was built</h2>
+  <ol class="steps">
+    <li><b>Harvest</b><span id="s-harvest"></span></li>
+    <li><b>Screen</b><span id="s-screen"></span></li>
+    <li><b>Extract</b><span>Each candidate item — its agenda text, minutes text and full staff report — is read
+      and converted into a structured record: counterparty, project, address, incentive amount and structure,
+      total cost, units, disposition, vote, and a source citation with page and a short verbatim anchor phrase.</span></li>
+    <li><b>Reconcile</b><span>Actions are clustered into projects, the agreement of record is promoted to the
+      headline row, and the best-available figure is carried forward with a tag showing which meeting it came from.</span></li>
+    <li><b>Join</b><span id="s-join"></span></li>
+  </ol>
+
+  <h2>Key decisions</h2>
+
+  <div class="call">
+    <h4>TIF is reported on a net-present-value basis, not cash basis</h4>
+    <p>Staff reports state each incentive two ways: a larger <strong>cash basis</strong> (the undiscounted sum of
+    rebates over 15–20 years) and a smaller <strong>net present value</strong>. The city commits to, caps, and
+    reports its own "% of project cost" on the NPV. Using the cash figure overstates the subsidy by roughly
+    40–75%.</p>
+    <p id="npv-detail"></p>
+  </div>
+
+  <div class="call">
+    <h4>No figure is ever estimated</h4>
+    <p>Where a document says terms are "as set forth in the Agreement" and gives no number, the field is left
+    blank and flagged — never inferred, interpolated, or back-computed. This is why totals are described as
+    "stated" figures and cover only part of the project count.</p>
+  </div>
+
+  <div class="call">
+    <h4>Batch actions are shown but excluded from totals</h4>
+    <p>Annual Workforce Housing Tax Credit resolutions bundle many unrelated developments into one item, and
+    their stated cost aggregates all of them — several of which have their own rows. These rows are marked
+    <span class="tag no">batch</span> and left out of every sum to prevent double-counting.</p>
+  </div>
+
+  <div class="call">
+    <h4>Actual rebates are a developer-level figure</h4>
+    <p>The state reports rebates by recipient, not by project. A developer's total spans all of their projects,
+    so the "actual rebate paid" column is a developer total attached for reference — it is never summed across
+    rows. The authoritative citywide totals come from the state series directly.</p>
+  </div>
+
+  <h2>Validation</h2>
+  <p>Three independent sources are used to check each other, and they agree:</p>
+  <div class="call good">
+    <h4 id="v1"></h4>
+    <p id="v1p"></p>
+  </div>
+  <div class="call good">
+    <h4 id="v2"></h4>
+    <p id="v2p"></p>
+  </div>
+
+  <h2>Limitations</h2>
+  <p>Read these before drawing conclusions. None of them are hidden in the data — each has a corresponding
+  flag or blank cell.</p>
+  <ul id="limits"></ul>
+
+  <h2>Definitions</h2>
+  <dl class="gloss">
+    <dt>Tax increment financing (TIF)</dt>
+    <dd>When a project raises a property's taxable value, the additional tax — the <em>increment</em> — is
+    diverted to repay project costs instead of flowing to the general funds of the taxing bodies. Des Moines
+    typically pays this to the developer as a rebate over a set term.</dd>
+    <dt>Net present value (NPV)</dt>
+    <dd>A future stream of rebates expressed in today's dollars (staff reports use a 4.5% discount rate). Always
+    smaller than the undiscounted cash total. This is the basis used throughout.</dd>
+    <dt>Net public gain</dt>
+    <dd>The staff-projected net taxes flowing to <em>all</em> taxing bodies — schools, county, city, transit —
+    after the incentive is paid, compared against leaving the site as it is. It is a projection, not an outcome.</dd>
+    <dt>Urban renewal area</dt>
+    <dd>The statutory district (Iowa Code ch. 403) whose increment funds a project. Distinct from a
+    neighborhood: districts are fiscal boundaries, neighborhoods are the city's recognized civic areas.</dd>
+    <dt>Certificate of completion</dt>
+    <dd>Issued once a developer satisfies the agreement. Used here as confirmation a project was actually
+    built, as opposed to merely approved.</dd>
+    <dt>Assessed value</dt>
+    <dd>The Polk County assessor's current total value for the matched parcels. For a finished project it
+    reflects the building; for a recent approval it still reflects the pre-development site.</dd>
+  </dl>
+
+  <h2>Reproducibility</h2>
+  <p id="repro"></p>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script>
+const M = __DATA__;
+const fmtM=v=>!v?"—":(Math.abs(v)>=1e6?"$"+(v/1e6).toFixed(v>=1e7?0:1)+"M":"$"+Math.round(v/1e3)+"K");
+const n=v=>Number(v).toLocaleString();
+const yS=M.windowStart.slice(0,4), yE=M.windowEnd.slice(0,4);
+
+document.getElementById("lede").textContent =
+  `How this dataset was assembled, the judgment calls behind the numbers, and what it can't tell you. `
+  + `Everything here is derived from public records; every figure traces back to a source document.`;
+
+document.getElementById("scope").innerHTML =
+  `Every developer/owner agreement, TIF action and related public incentive considered by the Des Moines City `
+  + `Council between <strong>${M.windowStart}</strong> and <strong>${M.windowEnd}</strong> — `
+  + `<strong>${n(M.meetings)} regular meetings</strong>, ${n(M.items)} agenda items, `
+  + `${n(M.actions)} incentive-related actions, collapsed into <strong>${n(M.projects)} projects</strong>. `
+  + `Regular council meetings only.`;
+
+document.getElementById("s-harvest").textContent =
+  `Every regular meeting's agenda and minutes in the window are downloaded from the city's document archive `
+  + `(${n(M.docs)} PDFs), plus the staff communication behind every candidate item.`;
+document.getElementById("s-screen").textContent =
+  `All ${n(M.items)} agenda items are keyword-screened for agreements, TIF, and incentive language. `
+  + `${n(M.tier1)} items pass as candidates for full extraction; ${n(M.tier2)} weaker matches (routine `
+  + `abatements, bond issues) are logged for audit but not extracted. Screening before extraction is what makes `
+  + `a decade of records tractable.`;
+document.getElementById("s-join").textContent =
+  `Projects are matched to assessor parcels by address (${n(M.assessorMatched)} of ${n(M.projects)}), to the `
+  + `state's actual rebate recipients by name, and to neighborhoods by locating the parcel inside the city's `
+  + `boundary polygons (${n(M.nbhds_with_tif)} of ${n(M.n_nbhds)} neighborhoods received investment).`;
+
+document.getElementById("npv-detail").innerHTML =
+  `Where a staff report states an NPV, it is used: <strong>${M.basis_corrected} projects</strong> were corrected `
+  + `down from a cash-basis figure and <strong>${M.basis_confirmed}</strong> confirmed already correct. For `
+  + `<strong>${M.basis_unverified}</strong> the source never states an NPV — those carry a `
+  + `<span class="tag no">?</span> marker and may still be overstated. Median TIF across the portfolio is `
+  + `<strong>${M.median_pct}% of project cost</strong>.`;
+
+document.getElementById("v1").textContent = "Our extraction vs. the state's actual payouts — within 2%";
+document.getElementById("v1p").innerHTML =
+  `Summing the incentives projected in the staff reports gives <strong>${fmtM(M.incPaidTotal)}</strong>. `
+  + `Independently, Iowa's urban-renewal filings show Des Moines actually rebated `
+  + `<strong>${fmtM(M.iowa_rebated)}</strong> to developers over FY${M.iowa_fy0}–${M.iowa_fy1} `
+  + `(against ${fmtM(M.iowa_collected)} of increment collected). Two unrelated methods, ~2% apart.`;
+
+const xwAll = M.crosswalk === M.crosswalk_total;
+document.getElementById("v2").textContent =
+  `Urban-renewal areas vs. the assessor's TIF tags — ${M.crosswalk} of ${M.crosswalk_total} agree`;
+document.getElementById("v2p").innerHTML =
+  `The assessor independently tags each parcel with its TIF district. Of the <strong>${M.crosswalk_total} projects</strong> `
+  + `where both our extracted urban-renewal area and the assessor's tag exist, `
+  + (xwAll ? `<strong>every one agrees</strong>` : `<strong>${M.crosswalk} agree</strong> and ${M.crosswalk_total-M.crosswalk} do not`)
+  + ` — an independent check on both the extraction and the address matching.`;
+
+document.getElementById("limits").innerHTML = [
+  `<strong>Regular council meetings only.</strong> Municipal Housing Agency meetings and consent action packets
+   are not yet harvested, so some affordable-housing actions are missing.`,
+  `<strong>Many figures simply aren't published.</strong> ${M.missing_tif} of ${M.projects} projects state no TIF
+   amount and ${M.missing_cost} state no total cost — the number lives only in the signed agreement exhibit.
+   Portfolio totals therefore understate real activity and are not a citywide TIF total.`,
+  `<strong>${M.basis_unverified} TIF figures are unverified as NPV.</strong> The source never stated a net present
+   value, so those amounts may be cash-basis and overstated.`,
+  `<strong>Build confirmation is a floor.</strong> ${M.completed} projects have a certificate of completion.
+   Completions of agreements signed before ${yS}, and entities whose names didn't match, aren't counted — the
+   true built count is higher.`,
+  `<strong>The assessor roll is a snapshot.</strong> It shows current value, not change over time, so the impact
+   of a project on surrounding property values cannot be measured from it. A prior-year roll would be needed.`,
+  `<strong>Not every project can be located.</strong> ${M.assessorMatched} of ${M.projects} matched a parcel;
+   ${M.unassigned_nbhd} of those fall outside any recognized neighborhood. Area-described sites ("Lot 9 in the
+   Market District") and unbuilt projects often have no distinct parcel.`,
+  `<strong>State actuals lag.</strong> Iowa's filings run FY${M.iowa_fy0}–${M.iowa_fy1}, and rebates flow years
+   after completion, so recent approvals show little or no actual payout yet.`,
+  `<strong>Project type is inferred.</strong> Types are classified from the wording of council items, not from a
+   city classification field.`,
+].map(t=>`<li>${t}</li>`).join("");
+
+document.getElementById("repro").innerHTML =
+  `The pipeline is a numbered sequence of scripts (harvest → screen → extract → reconcile → join → outputs) with
+   every downloaded document cached, so a rerun reproduces these exact figures and extends cleanly to a wider
+   window. Machine-readable outputs accompany this site: an Excel workbook, flat CSVs, shapefiles and GeoJSON
+   in the county's own coordinate system, and a field dictionary.`;
+
+document.getElementById("foot").innerHTML =
+  `Compiled ${M.compiled}. Data window ${M.windowStart} to ${M.windowEnd}. Sources: City of Des Moines council
+   agendas, minutes and communications (councildocs.dsm.city); Iowa Department of Management urban-renewal
+   reports; Polk County Assessor; City of Des Moines neighborhood boundaries.`;
+</script>

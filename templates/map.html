@@ -1,0 +1,365 @@
+<title>Des Moines TIF Investment Map — 2016–2026</title>
+<style>
+  :root{
+    --surface:#faf8f3; --card:#ffffff; --ink:#211f1a; --ink-2:#57544c; --ink-3:#8c8880;
+    --line:#e7e4db; --line-soft:#f0ede4; --heat:#e4531c; --heat-2:#c84918; --flora:#134937; --soil:#3b671b; --warn:#c98500;
+    --map-bg:#eee9dd; --water:#dfe6e6; --nb-lo:#f3ead9; --nb-hi:#e4531c; --nb-empty:#e8e3d6; --nb-line:#cdc7b8;
+    --pt:#134937; --shadow:0 4px 20px rgba(40,30,15,.13);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --surface:#17160f; --card:#201e18; --ink:#f5f2e9; --ink-2:#c6c2b4; --ink-3:#8c887c;
+      --line:#332f25; --line-soft:#26231b; --heat:#ef6a38; --heat-2:#e4531c; --flora:#7fce93; --soil:#8bb063; --warn:#e0a52a;
+      --map-bg:#121109; --water:#182120; --nb-lo:#2a2313; --nb-hi:#ef6a38; --nb-empty:#221f16; --nb-line:#3a3527;
+      --pt:#7fce93; --shadow:0 4px 22px rgba(0,0,0,.5); }
+  }
+  :root[data-theme="dark"]{ --surface:#17160f; --card:#201e18; --ink:#f5f2e9; --ink-2:#c6c2b4; --ink-3:#8c887c;
+      --line:#332f25; --line-soft:#26231b; --heat:#ef6a38; --heat-2:#e4531c; --flora:#7fce93; --soil:#8bb063; --warn:#e0a52a;
+      --map-bg:#121109; --water:#182120; --nb-lo:#2a2313; --nb-hi:#ef6a38; --nb-empty:#221f16; --nb-line:#3a3527; --pt:#7fce93; --shadow:0 4px 22px rgba(0,0,0,.5); }
+  :root[data-theme="light"]{ --surface:#faf8f3; --card:#fff; --ink:#211f1a; --ink-2:#57544c; --ink-3:#8c8880;
+      --line:#e7e4db; --line-soft:#f0ede4; --heat:#e4531c; --heat-2:#c84918; --flora:#134937; --soil:#3b671b; --warn:#c98500;
+      --map-bg:#eee9dd; --water:#dfe6e6; --nb-lo:#f3ead9; --nb-hi:#e4531c; --nb-empty:#e8e3d6; --nb-line:#cdc7b8; --pt:#134937; --shadow:0 4px 20px rgba(40,30,15,.13); }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; height:100%; background:var(--surface); color:var(--ink); font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+  .app{ display:flex; flex-direction:column; height:100vh; }
+  header{ padding:15px 20px 13px; border-bottom:1px solid var(--line); background:var(--card); z-index:5; }
+  .eyebrow{ font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--heat); font-weight:600; margin:0 0 4px; }
+  h1{ font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:23px; font-weight:600; margin:0; letter-spacing:-.01em; }
+  header p{ margin:5px 0 0; color:var(--ink-2); font-size:12.5px; max-width:100ch; }
+  .main{ flex:1; display:flex; min-height:0; }
+  .stage{ position:relative; flex:1; min-width:0; background:var(--map-bg); overflow:hidden; }
+  canvas{ display:block; width:100%; height:100%; cursor:grab; }
+  canvas:active{ cursor:grabbing; }
+  .float{ position:absolute; background:var(--card); border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow); }
+  .ctrl{ top:14px; left:14px; padding:12px 13px; width:210px; }
+  .ctrl h3{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); margin:0 0 7px; font-weight:700; }
+  .ctrlhd{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  #ctrlToggle{ font:inherit; font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700;
+    color:var(--ink-3); background:none; border:none; padding:0; cursor:default; display:flex; align-items:center; gap:5px; }
+  #ctrlToggle .car{ display:none; font-size:9px; transition:transform .15s; }
+  .ctrl.collapsed #ctrlToggle .car{ transform:rotate(-90deg); }
+  .ctrl.collapsed .ctrlbody{ display:none; }
+  .clr{ font:inherit; font-size:10.5px; color:var(--ink-3); background:none; border:none; cursor:pointer; padding:0; text-decoration:underline; }
+  .clr:hover{ color:var(--heat); }
+  .hint{ font-size:10.5px; color:var(--ink-3); margin:6px 0 10px; line-height:1.45; }
+  .seg{ display:flex; flex-direction:column; gap:4px; }
+  .seg button{ font:inherit; font-size:12px; text-align:left; padding:5px 9px; border:1px solid var(--line); background:var(--surface); color:var(--ink-2); border-radius:6px; cursor:pointer; transition:all .12s; }
+  .seg.mini{ flex-flow:row wrap; gap:4px; }
+  .seg.mini button{ font-size:11px; padding:3px 8px; }
+  .seg button:hover{ border-color:var(--heat); }
+  .seg button.on{ background:var(--heat); color:#fff; border-color:var(--heat); font-weight:600; }
+  .toggle{ display:flex; align-items:center; gap:8px; font-size:12.5px; padding:3px 0; cursor:pointer; color:var(--ink-2); }
+  .toggle.lyr{ font-weight:600; color:var(--ink); padding:5px 0 3px; }
+  .toggle.lyr input{ accent-color:var(--heat); width:15px; height:15px; }
+  .sub{ padding:2px 0 5px 22px; overflow:hidden; }
+  .sub.off{ display:none; }
+  .legend{ bottom:14px; left:14px; padding:11px 13px; width:238px; }
+  .legend .ttl{ font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-3); margin-bottom:6px; }
+  .ramp{ height:10px; border-radius:3px; margin:5px 0 3px; }
+  .rlab{ display:flex; justify-content:space-between; font-size:10.5px; color:var(--ink-3); font-variant-numeric:tabular-nums; }
+  .legend .sz{ display:flex; align-items:flex-end; gap:9px; margin-top:9px; }
+  .legend .sz svg{ overflow:visible; }
+  .zoom{ top:14px; right:14px; display:flex; flex-direction:column; gap:5px; }
+  .zoom button{ width:32px; height:32px; font-size:18px; background:var(--card); border:1px solid var(--line); border-radius:8px; cursor:pointer; color:var(--ink); box-shadow:var(--shadow); }
+  #tip{ position:fixed; pointer-events:none; z-index:30; display:none; max-width:250px; background:var(--ink); color:var(--surface); font-size:12px; line-height:1.45; padding:7px 10px; border-radius:7px; box-shadow:0 4px 16px rgba(0,0,0,.3); }
+  #tip b{ display:block; font-size:12.5px; }
+  #tip .s{ opacity:.7; font-size:11px; }
+  .pop{ position:absolute; z-index:20; display:none; width:296px; background:var(--card); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); padding:15px 16px; }
+  .pop h4{ margin:0 0 2px; font-size:15px; font-family:"Iowan Old Style",Palatino,Georgia,serif; padding-right:16px; }
+  .pop .meta{ color:var(--ink-3); font-size:11.5px; margin-bottom:10px; }
+  .pop dl{ display:grid; grid-template-columns:auto 1fr; gap:3px 12px; margin:0; font-size:12.5px; }
+  .pop dt{ color:var(--ink-2); } .pop dd{ margin:0; text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }
+  .pop .x{ position:absolute; top:11px; right:13px; cursor:pointer; color:var(--ink-3); font-size:18px; line-height:1; }
+  .pop a{ color:var(--heat); font-size:12px; text-decoration:none; display:inline-block; margin-top:10px; font-weight:600; }
+  .chip{ display:inline-block; font-size:10px; font-weight:700; padding:1px 8px; border-radius:999px; }
+  .chip.built{ background:color-mix(in srgb,var(--flora) 18%,transparent); color:var(--flora); }
+  .chip.appr{ background:var(--line-soft); color:var(--ink-2); }
+  aside{ width:300px; border-left:1px solid var(--line); background:var(--card); overflow-y:auto; padding:16px 16px 24px; }
+
+  /* ---- phones/tablets: stack the map over the ranking, collapse the controls ---- */
+  @media (max-width:820px){
+    .app{ height:auto; min-height:100vh; }
+    .main{ flex-direction:column; }
+    .stage{ flex:none; height:62vh; min-height:340px; }
+    aside{ width:auto; border-left:none; border-top:1px solid var(--line); overflow:visible; padding:16px 15px 30px; }
+    header{ padding:13px 15px 11px; }
+    h1{ font-size:20px; }
+    header p{ font-size:12px; }
+    .ctrl{ top:10px; left:10px; right:52px; width:auto; max-width:none; padding:10px 12px; }
+    .ctrl .hint{ display:none; }
+    .legend{ left:10px; right:52px; bottom:10px; width:auto; padding:9px 11px; }
+    .zoom{ top:10px; right:10px; }
+    .zoom button{ width:36px; height:36px; }
+    .pop{ width:auto; left:10px !important; right:10px; top:auto !important; bottom:10px; }
+    .seg.mini button{ padding:5px 9px; font-size:11.5px; }   /* bigger touch targets */
+    .toggle.lyr{ padding:7px 0 5px; }
+    #ctrlToggle{ cursor:pointer; }
+    #ctrlToggle .car{ display:inline; }
+  }
+  aside h2{ font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin:0 0 3px; font-weight:700; }
+  aside .lead{ font-size:12px; color:var(--ink-2); margin:0 0 12px; }
+  .nb{ padding:9px 0; border-bottom:1px solid var(--line-soft); cursor:pointer; }
+  .nb:hover .nb1{ color:var(--heat); }
+  .nb1{ font-weight:600; font-size:13px; display:flex; justify-content:space-between; gap:8px; transition:color .1s; }
+  .nb1 .amt{ color:var(--heat); font-variant-numeric:tabular-nums; }
+  .nb2{ color:var(--ink-2); font-size:11px; font-variant-numeric:tabular-nums; margin-top:2px; }
+  .track{ height:5px; background:var(--line-soft); border-radius:3px; margin-top:5px; overflow:hidden; }
+  .track i{ display:block; height:100%; background:linear-gradient(90deg,var(--heat),var(--heat-2)); border-radius:3px; }
+  .note{ font-size:10.5px; color:var(--ink-3); margin-top:14px; line-height:1.55; }
+</style>
+
+<div class="app">
+  <header>
+    <p class="eyebrow">City of Des Moines · Tax Increment Financing · 2016–2026</p>
+    <h1>Where the TIF investment went — by neighborhood</h1>
+    <p id="sub"></p>
+  </header>
+  <div class="main">
+    <div class="stage">
+      <canvas id="map"></canvas>
+      <div class="float ctrl" id="ctrl">
+        <div class="ctrlhd">
+          <button id="ctrlToggle" aria-expanded="true"><span class="car">▾</span> Layers</button>
+          <button id="clearAll" class="clr">Clear all</button>
+        </div>
+        <div class="ctrlbody">
+        <p class="hint">Start from the neighborhood layout and switch layers on. Turn everything off to see the boundaries alone.</p>
+
+        <label class="toggle lyr"><input type="checkbox" id="lyrShade" checked> Neighborhood shading</label>
+        <div class="sub" id="shadeOpts">
+          <div class="seg mini" id="nbby">
+            <button data-k="tif" class="on">TIF invested</button>
+            <button data-k="n">Projects</button>
+            <button data-k="netGain">Net public gain</button>
+          </div>
+        </div>
+
+        <label class="toggle lyr"><input type="checkbox" id="lyrPts" checked> TIF projects</label>
+        <div class="sub" id="ptOpts">
+          <div class="seg mini" id="ptby">
+            <button data-k="tif" class="on">TIF amount</button>
+            <button data-k="status">Built / approved</button>
+            <button data-k="type">Project type</button>
+          </div>
+        </div>
+
+        <label class="toggle lyr"><input type="checkbox" id="lyrLbl" checked> Neighborhood labels</label>
+        <label class="toggle lyr"><input type="checkbox" id="lyrGrid"> Parcel-value heat</label>
+        </div>
+      </div>
+      <div class="zoom"><button id="zin">+</button><button id="zout">−</button><button id="zfit" style="font-size:13px" title="Reset view">⤢</button></div>
+      <div class="float legend" id="legend"></div>
+      <div class="pop" id="pop"></div>
+    </div>
+    <aside>
+      <h2>Investment by neighborhood</h2>
+      <p class="lead" id="asub"></p>
+      <div id="nblist"></div>
+      <p class="note" id="note"></p>
+    </aside>
+  </div>
+</div>
+<div id="tip"></div>
+
+<script>
+const DATA = __MAPDATA__;
+const fmtM=v=>v==null?"—":(Math.abs(v)>=1e6?"$"+(v/1e6).toFixed(v>=1e7?0:1)+"M":Math.abs(v)>=1e3?"$"+Math.round(v/1e3)+"K":"$"+Math.round(v));
+const fmtF=v=>v==null?"—":"$"+Math.round(v).toLocaleString();
+const cssv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const hex=c=>{c=c.replace('#','');if(c.length===3)c=c.split('').map(x=>x+x).join('');return[parseInt(c.slice(0,2),16),parseInt(c.slice(2,4),16),parseInt(c.slice(4,6),16)];};
+const mix=(a,b,t)=>{const p=hex(a),q=hex(b);return`rgb(${Math.round(p[0]+(q[0]-p[0])*t)},${Math.round(p[1]+(q[1]-p[1])*t)},${Math.round(p[2]+(q[2]-p[2])*t)})`;};
+
+const TYPES=["Residential","Mixed-use","Office","Industrial / warehouse","Retail / restaurant","Hotel","Parking","Commercial (MAA / abatement)","TIF district / UR plan","Other"];
+const TYPE_HUE={ "Residential":"#2a78d6","Mixed-use":"#e4531c","Office":"#4a3aa7","Industrial / warehouse":"#7a5300","Retail / restaurant":"#1baf7a","Hotel":"#e87ba4","Parking":"#8c8880","Commercial (MAA / abatement)":"#008300","TIF district / UR plan":"#c98500","Other":"#8c8880" };
+
+const cv=document.getElementById("map"), ctx=cv.getContext("2d");
+const [minx,miny,maxx,maxy]=DATA.bbox;
+let view={zoom:1,panx:0,pany:0}, dpr=Math.min(devicePixelRatio||1,2);
+let nbK="tif", ptK="tif", showShade=true, showPts=true, showLbl=true, showGrid=false, hoverP=null, hoverN=null;
+
+const P=DATA.projects.filter(p=>p.x&&p.y).sort((a,b)=>(a.tif||0)-(b.tif||0));
+const NB=DATA.neighborhoods;
+const maxTif=Math.max(...P.map(p=>p.tif||0));
+// neighborhoods to always label (biggest by TIF); the rest only appear when zoomed in
+const labelAlways=new Set([...DATA.nbhd_ranked].slice(0,12).map(n=>n.name));
+const nbMax={ tif:Math.max(1,...NB.map(n=>n.tif)), n:Math.max(1,...NB.map(n=>n.n)), netGain:Math.max(1,...NB.map(n=>n.netGain)) };
+const gridMax=DATA.meta.val_max;
+
+document.getElementById("sub").textContent=
+  `${DATA.meta.nbhds_with_tif} of ${DATA.meta.n_nbhds} recognized neighborhoods received TIF-backed development. Shading = total TIF invested; each dot is a project (size = TIF amount). Click a project or a neighborhood for detail.`;
+document.getElementById("asub").textContent=`${DATA.meta.mapped} located projects across ${DATA.meta.nbhds_with_tif} neighborhoods · ranked by TIF invested.`;
+document.getElementById("note").innerHTML="Points sit at the matched parcel centroid; 14 located projects fall outside a recognized neighborhood boundary. Neighborhood shapes: City of Des Moines. Parcel-value heat and assessed values are a current snapshot (not change over time).";
+
+function resize(){ const r=cv.parentElement.getBoundingClientRect(); cv.width=r.width*dpr; cv.height=r.height*dpr; cv.style.width=r.width+"px"; cv.style.height=r.height+"px"; draw(); }
+function baseScale(){ const r=cv.getBoundingClientRect(); return Math.min(r.width/(maxx-minx),r.height/(maxy-miny))*0.94; }
+function tx(x,y){ const s=baseScale()*view.zoom, r=cv.getBoundingClientRect(); const ox=(r.width-(maxx-minx)*s)/2, oy=(r.height-(maxy-miny)*s)/2; return[(x-minx)*s+ox+view.panx, r.height-((y-miny)*s+oy)-view.pany]; }
+
+function nbColor(n){
+  if(!showShade||!n[nbK]) return cssv('--nb-empty');
+  const t=Math.pow(Math.min(1,n[nbK]/nbMax[nbK]),0.6);
+  return mix(cssv('--nb-lo'),cssv('--nb-hi'),t);
+}
+function ptColor(p){
+  if(ptK==="status") return p.status==="completed"?cssv('--flora'):cssv('--ink-3');
+  if(ptK==="type") return TYPE_HUE[p.type]||cssv('--ink-3');
+  return cssv('--heat');
+}
+const radius=p=>3.5+14*Math.sqrt((p.tif||0)/maxTif);
+
+function ringPath(rings){ ctx.beginPath(); for(const ring of rings){ ring.forEach((pt,i)=>{ const[x,y]=tx(pt[0],pt[1]); i?ctx.lineTo(x,y):ctx.moveTo(x,y); }); ctx.closePath(); } }
+
+function draw(){
+  const r=cv.getBoundingClientRect(); ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.clearRect(0,0,r.width,r.height); ctx.fillStyle=cssv('--map-bg'); ctx.fillRect(0,0,r.width,r.height);
+  const s=baseScale()*view.zoom;
+  // optional parcel-value heat (under neighborhoods)
+  if(showGrid){ const cell=DATA.cell*s; ctx.globalAlpha=.5; for(const c of DATA.grid){ const[sx,sy]=tx(c.x,c.y); if(sx<-cell||sx>r.width+cell||sy<-cell||sy>r.height+cell)continue; ctx.fillStyle=mix(cssv('--nb-lo'),cssv('--heat'),Math.pow(Math.min(1,Math.log(c.val+1)/Math.log(gridMax+1)),0.85)); ctx.fillRect(sx-cell/2,sy-cell/2,cell+.6,cell+.6);} ctx.globalAlpha=1; }
+  // neighborhood choropleth
+  ctx.lineJoin="round";
+  for(const n of NB){ ringPath(n.rings); ctx.fillStyle=nbColor(n); ctx.globalAlpha=showGrid?.55:1; ctx.fill(); ctx.globalAlpha=1;
+    ctx.lineWidth=n===hoverN?2.2:0.7; ctx.strokeStyle=n===hoverN?cssv('--ink'):cssv('--nb-line'); ctx.stroke(); }
+  // labels — biggest neighborhoods always; the rest only once zoomed in (de-clutter)
+  if(showLbl){ ctx.textAlign="center"; ctx.textBaseline="middle"; ctx.font="600 11px system-ui,sans-serif";
+    for(const n of NB){ if(!n.n) continue; if(!labelAlways.has(n.name) && view.zoom<2.2) continue;
+      const[sx,sy]=tx(n.centroid[0],n.centroid[1]); if(sx<0||sx>r.width||sy<0||sy>r.height)continue;
+      const nm=n.name.length>22?n.name.slice(0,21)+"…":n.name;
+      ctx.lineWidth=3.5; ctx.strokeStyle=cssv('--card'); ctx.strokeText(nm,sx,sy); ctx.fillStyle=cssv('--ink'); ctx.fillText(nm,sx,sy); } }
+  // projects — draw largest first so smaller dots stay visible on top; semi-transparent
+  if(showPts){ ctx.save(); ctx.shadowColor="rgba(0,0,0,.18)"; ctx.shadowBlur=3; ctx.shadowOffsetY=1;
+    for(let i=P.length-1;i>=0;i--){ const p=P[i]; if(p===hoverP)continue; const[sx,sy]=tx(p.x,p.y), rad=radius(p);
+      if(sx<-30||sx>r.width+30||sy<-30||sy>r.height+30)continue;
+      ctx.beginPath(); ctx.arc(sx,sy,rad,0,7); ctx.fillStyle=ptColor(p); ctx.globalAlpha=.78; ctx.fill();
+      ctx.globalAlpha=1; ctx.shadowColor="transparent"; ctx.lineWidth=1.3; ctx.strokeStyle="#fff"; ctx.stroke();
+      ctx.shadowColor="rgba(0,0,0,.18)"; }
+    ctx.restore();
+    if(hoverP){ const[sx,sy]=tx(hoverP.x,hoverP.y), rad=radius(hoverP);
+      ctx.beginPath(); ctx.arc(sx,sy,rad,0,7); ctx.fillStyle=ptColor(hoverP); ctx.fill();
+      ctx.lineWidth=2.5; ctx.strokeStyle=cssv('--ink'); ctx.stroke(); } }
+  drawLegend();
+}
+function drawLegend(){
+  const L=document.getElementById("legend");
+  const nbLab={tif:"TIF invested",n:"Number of projects",netGain:"Net public gain"};
+  const ptLab={tif:"TIF amount",status:"Outcome",type:"Project type"};
+  let h="";
+  if(showShade){ h+=`<div class="ttl">Neighborhood — ${nbLab[nbK]}</div><div class="ramp" style="background:linear-gradient(90deg,${cssv('--nb-lo')},${cssv('--nb-hi')})"></div><div class="rlab"><span>0</span><span>${nbK==='n'?nbMax.n:fmtM(nbMax[nbK])}</span></div>`; }
+  if(showPts){
+    h+=`<div class="ttl" style="margin-top:9px">Projects — ${ptLab[ptK]}</div>`;
+    if(ptK==="status"){ h+=`<div style="display:flex;gap:12px;font-size:11.5px"><span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${cssv('--flora')};vertical-align:middle"></span> Built</span><span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${cssv('--ink-3')};vertical-align:middle"></span> Approved</span></div>`; }
+    else if(ptK==="type"){ h+=`<div style="display:flex;flex-wrap:wrap;gap:3px 10px;font-size:10.5px;margin-top:2px">`+["Residential","Mixed-use","Office","Industrial / warehouse","Retail / restaurant","Hotel"].map(t=>`<span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${TYPE_HUE[t]};vertical-align:middle"></span> ${t.replace(' / warehouse','')}</span>`).join("")+`</div>`; }
+    h+=`<div class="sz"><svg width="42" height="24"><circle cx="7" cy="17" r="4" fill="${cssv('--ink-3')}"/><circle cx="30" cy="13" r="9" fill="${cssv('--ink-3')}"/></svg><span style="font-size:10.5px;color:var(--ink-3)">size = TIF $ (max ${fmtM(maxTif)})</span></div>`;
+  }
+  L.style.display = h ? "block" : "none";
+  L.innerHTML=h;
+}
+
+// neighborhood ranking panel
+(function(){
+  const list=document.getElementById("nblist"), mx=DATA.meta.nb_tif_max;
+  list.innerHTML=DATA.nbhd_ranked.map((n,i)=>`<div class="nb" data-nb="${encodeURIComponent(n.name)}">
+    <div class="nb1"><span>${n.name}</span><span class="amt">${fmtM(n.tif)}</span></div>
+    <div class="nb2">${n.n} project${n.n>1?'s':''} · ${fmtM(n.cost)} cost · net gain ${fmtM(n.netGain)}</div>
+    <div class="track"><i style="width:${Math.max(4,100*n.tif/mx)}%"></i></div></div>`).join("");
+  list.querySelectorAll(".nb").forEach(el=>el.onclick=()=>{ const nm=decodeURIComponent(el.dataset.nb); const n=NB.find(x=>x.name===nm); if(n){ hoverN=n; zoomToNbhd(n); } });
+})();
+function zoomToNbhd(n){
+  const xs=[],ys=[]; n.rings.forEach(r=>r.forEach(p=>{xs.push(p[0]);ys.push(p[1]);}));
+  const cx=(Math.min(...xs)+Math.max(...xs))/2, cy=(Math.min(...ys)+Math.max(...ys))/2;
+  const r=cv.getBoundingClientRect();
+  const span=Math.max(Math.max(...xs)-Math.min(...xs),Math.max(...ys)-Math.min(...ys),1);
+  view.zoom=Math.max(1,Math.min(7,(Math.min(r.width,r.height)*0.55)/(span*baseScale())));
+  // recenter: place the neighborhood centroid at the viewport center
+  view.panx=0; view.pany=0; const[csx,csy]=tx(cx,cy);
+  view.panx=r.width/2-csx; view.pany=-(r.height/2-csy); draw();
+}
+
+// interaction
+function hitP(mx,my){ for(let i=P.length-1;i>=0;i--){ const p=P[i],[sx,sy]=tx(p.x,p.y); if((mx-sx)**2+(my-sy)**2<=(radius(p)+2)**2)return p; } return null; }
+function hitN(mx,my){ for(const n of NB){ const[wx,wy]=inv(mx,my); if(n.rings.some(r=>pip(wx,wy,r)))return n; } return null; }
+function inv(mx,my){ const s=baseScale()*view.zoom,r=cv.getBoundingClientRect(); const ox=(r.width-(maxx-minx)*s)/2,oy=(r.height-(maxy-miny)*s)/2; return[ (mx-view.panx-ox)/s+minx, ((r.height-my-view.pany)-oy)/s+miny ]; }
+function pip(x,y,ring){ let inside=false; for(let i=0,j=ring.length-1;i<ring.length;j=i++){ const xi=ring[i][0],yi=ring[i][1],xj=ring[j][0],yj=ring[j][1]; if(((yi>y)!=(yj>y))&&(x<(xj-xi)*(y-yi)/(yj-yi)+xi))inside=!inside; } return inside; }
+const tip=document.getElementById("tip"), pop=document.getElementById("pop");
+let drag=null;
+cv.addEventListener("mousedown",e=>{ drag={x:e.clientX,y:e.clientY,px:view.panx,py:view.pany,moved:false}; });
+addEventListener("mousemove",e=>{
+  if(drag){ view.panx=drag.px+(e.clientX-drag.x); view.pany=drag.py-(e.clientY-drag.y); if(Math.abs(e.clientX-drag.x)+Math.abs(e.clientY-drag.y)>3)drag.moved=true; draw(); return; }
+  const r=cv.getBoundingClientRect(), mx=e.clientX-r.left, my=e.clientY-r.top;
+  const p=hitP(mx,my); let n=p?null:hitN(mx,my);
+  if(p!==hoverP||n!==hoverN){ hoverP=p; hoverN=n; draw(); }
+  if(p){ tip.style.display="block"; tip.innerHTML=`<b>${p.name}</b><span class="s">TIF ${fmtM(p.tif)} · ${p.type}${p.status==='completed'?' · built':''}</span>`; tip.style.left=Math.min(e.clientX+14,innerWidth-240)+"px"; tip.style.top=(e.clientY+14)+"px"; }
+  else if(n&&n.n){ tip.style.display="block"; tip.innerHTML=`<b>${n.name}</b><span class="s">${n.n} project${n.n>1?'s':''} · TIF ${fmtM(n.tif)}</span>`; tip.style.left=Math.min(e.clientX+14,innerWidth-240)+"px"; tip.style.top=(e.clientY+14)+"px"; }
+  else tip.style.display="none";
+});
+addEventListener("mouseup",e=>{ if(drag&&!drag.moved){ const r=cv.getBoundingClientRect(); const p=hitP(e.clientX-r.left,e.clientY-r.top); if(p)showPop(p,e); else pop.style.display="none"; } drag=null; });
+function showPop(p,e){
+  pop.innerHTML=`<span class="x" onclick="document.getElementById('pop').style.display='none'">×</span>
+    <h4>${p.name}</h4><div class="meta">${p.dev||''}${p.addr?' · '+p.addr:''}</div>
+    <dl><dt>TIF (NPV)</dt><dd>${fmtF(p.tif)}</dd><dt>Project cost</dt><dd>${fmtF(p.cost)}</dd>
+    <dt>TIF % of cost</dt><dd>${p.pct!=null?p.pct.toFixed(1)+'%':'—'}</dd><dt>Net public gain</dt><dd>${fmtF(p.netGain)}</dd>
+    <dt>Assessed value</dt><dd>${fmtF(p.realized)}</dd><dt>Actual rebate paid</dt><dd>${fmtF(p.actual)}</dd>
+    <dt>Status</dt><dd>${p.status==='completed'?'<span class="chip built">built</span>':'<span class="chip appr">approved</span>'}</dd></dl>
+    <div style="font-size:11.5px;color:var(--ink-3);margin-top:8px">${p.nbhd?p.nbhd+' · ':''}${p.type} · ${p.date||''}</div>
+    ${p.url?`<a href="${p.url}" target="_blank" rel="noopener">Source document ↗</a>`:''}`;
+  const r=cv.getBoundingClientRect(); pop.style.display="block";
+  pop.style.left=Math.min(e.clientX-r.left+12,r.width-310)+"px"; pop.style.top=Math.min(e.clientY-r.top+12,r.height-270)+"px"; tip.style.display="none";
+}
+cv.addEventListener("wheel",e=>{ e.preventDefault(); const f=e.deltaY<0?1.15:1/1.15,r=cv.getBoundingClientRect(); const mx=e.clientX-r.left,my=e.clientY-r.top;
+  view.panx=mx-(mx-view.panx)*f; view.pany=(r.height-my)-((r.height-my)-view.pany)*f; view.zoom*=f; draw(); },{passive:false});
+
+/* ---- touch: one finger pans, two fingers pinch-zoom, tap opens a project ---- */
+let tdrag=null, pinch=null;
+const mid=t=>({x:(t[0].clientX+t[1].clientX)/2, y:(t[0].clientY+t[1].clientY)/2});
+const dist=t=>Math.hypot(t[0].clientX-t[1].clientX, t[0].clientY-t[1].clientY);
+cv.addEventListener("touchstart",e=>{
+  const t=e.touches;
+  if(t.length===1){ tdrag={x:t[0].clientX,y:t[0].clientY,px:view.panx,py:view.pany,moved:false}; pinch=null; }
+  else if(t.length===2){ pinch={d:dist(t),z:view.zoom,c:mid(t),px:view.panx,py:view.pany}; tdrag=null; }
+},{passive:true});
+cv.addEventListener("touchmove",e=>{
+  const t=e.touches; const r=cv.getBoundingClientRect();
+  if(pinch&&t.length===2){ e.preventDefault();
+    const f=dist(t)/pinch.d; const mx=pinch.c.x-r.left, my=pinch.c.y-r.top;
+    view.zoom=pinch.z*f;
+    view.panx=mx-(mx-pinch.px)*f; view.pany=(r.height-my)-((r.height-my)-pinch.py)*f;
+    draw(); return; }
+  if(tdrag&&t.length===1){ e.preventDefault();
+    view.panx=tdrag.px+(t[0].clientX-tdrag.x); view.pany=tdrag.py-(t[0].clientY-tdrag.y);
+    if(Math.abs(t[0].clientX-tdrag.x)+Math.abs(t[0].clientY-tdrag.y)>6) tdrag.moved=true;
+    draw(); }
+},{passive:false});
+cv.addEventListener("touchend",e=>{
+  if(tdrag&&!tdrag.moved){ const r=cv.getBoundingClientRect();
+    const p=hitP(tdrag.x-r.left, tdrag.y-r.top);
+    if(p) showPop(p,{clientX:tdrag.x,clientY:tdrag.y}); else pop.style.display="none"; }
+  tdrag=null; pinch=null;
+},{passive:true});
+document.getElementById("zin").onclick=()=>{view.zoom*=1.3;draw();};
+document.getElementById("zout").onclick=()=>{view.zoom/=1.3;draw();};
+document.getElementById("zfit").onclick=()=>{view={zoom:1,panx:0,pany:0};hoverN=null;draw();};
+// metric sub-selectors (which measure a layer shows — only relevant when the layer is on)
+document.querySelectorAll("#nbby button").forEach(b=>b.onclick=()=>{ document.querySelectorAll("#nbby button").forEach(x=>x.classList.remove("on")); b.classList.add("on"); nbK=b.dataset.k; if(!showShade){document.getElementById("lyrShade").checked=true;showShade=true;syncSubs();} draw(); });
+document.querySelectorAll("#ptby button").forEach(b=>b.onclick=()=>{ document.querySelectorAll("#ptby button").forEach(x=>x.classList.remove("on")); b.classList.add("on"); ptK=b.dataset.k; if(!showPts){document.getElementById("lyrPts").checked=true;showPts=true;syncSubs();} draw(); });
+// layer toggles — each independently on/off; turn all off to see the boundary layout alone
+function syncSubs(){ document.getElementById("shadeOpts").classList.toggle("off",!showShade); document.getElementById("ptOpts").classList.toggle("off",!showPts); }
+document.getElementById("lyrShade").onchange=e=>{showShade=e.target.checked;syncSubs();draw();};
+document.getElementById("lyrPts").onchange=e=>{showPts=e.target.checked;syncSubs();draw();};
+document.getElementById("lyrLbl").onchange=e=>{showLbl=e.target.checked;draw();};
+document.getElementById("lyrGrid").onchange=e=>{showGrid=e.target.checked;draw();};
+document.getElementById("clearAll").onclick=()=>{
+  showShade=showPts=showLbl=showGrid=false;
+  ["lyrShade","lyrPts","lyrLbl","lyrGrid"].forEach(id=>document.getElementById(id).checked=false);
+  syncSubs(); draw();
+};
+syncSubs();
+// controls collapse on small screens (they'd otherwise cover the map)
+const isNarrow=()=>matchMedia("(max-width:820px)").matches;
+const ctrlEl=document.getElementById("ctrl"), ctrlTog=document.getElementById("ctrlToggle");
+ctrlTog.onclick=()=>{ if(!isNarrow())return; const c=ctrlEl.classList.toggle("collapsed");
+  ctrlTog.setAttribute("aria-expanded",String(!c)); };
+function applyNarrow(){ const n=isNarrow(); ctrlEl.classList.toggle("collapsed",n);
+  ctrlTog.setAttribute("aria-expanded",String(!n)); }
+applyNarrow();
+matchMedia("(max-width:820px)").addEventListener("change",()=>{applyNarrow();resize();});
+addEventListener("resize",resize);
+new MutationObserver(()=>draw()).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+resize();
+</script>

@@ -1,0 +1,549 @@
+{
+ "17-346": {
+  "npv": 28500000,
+  "method": "single",
+  "cash": []
+ },
+ "17-863": {
+  "npv": null,
+  "method": "none",
+  "cash": [
+   1000000
+  ]
+ },
+ "18-097": {
+  "npv": null,
+  "method": "none",
+  "cash": [
+   4000000
+  ]
+ },
+ "18-213": {
+  "npv": null,
+  "method": "none",
+  "cash": [
+   3090000
+  ]
+ },
+ "18-258": {
+  "npv": 1200000,
+  "method": "single",
+  "cash": [
+   1400000
+  ]
+ },
+ "18-441": {
+  "npv": 1600000,
+  "method": "single",
+  "cash": []
+ },
+ "18-476": {
+  "npv": 1400000,
+  "method": "single",
+  "cash": []
+ },
+ "18-554": {
+  "npv": 8230980,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "18-556": {
+  "npv": 3030000,
+  "method": "single",
+  "cash": []
+ },
+ "18-606": {
+  "npv": 3100000,
+  "method": "single",
+  "cash": []
+ },
+ "19-022": {
+  "npv": 8230980,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "19-046": {
+  "npv": 3100000,
+  "method": "single",
+  "cash": []
+ },
+ "19-166": {
+  "npv": 2000000,
+  "method": "explicit total",
+  "cash": []
+ },
+ "19-173": {
+  "npv": 984000,
+  "method": "single",
+  "cash": []
+ },
+ "19-216": {
+  "npv": 984000,
+  "method": "single",
+  "cash": []
+ },
+ "19-377": {
+  "npv": 2000000,
+  "method": "single",
+  "cash": []
+ },
+ "19-388": {
+  "npv": 8230980,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "19-413": {
+  "npv": 2969000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "19-417": {
+  "npv": 4313800,
+  "method": "single",
+  "cash": []
+ },
+ "19-453": {
+  "npv": 432161,
+  "method": "single",
+  "cash": []
+ },
+ "19-496": {
+  "npv": 432161,
+  "method": "single",
+  "cash": []
+ },
+ "19-501": {
+  "npv": 3800000,
+  "method": "single",
+  "cash": []
+ },
+ "19-546": {
+  "npv": 2969000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "19-548": {
+  "npv": 488593,
+  "method": "single",
+  "cash": []
+ },
+ "19-556": {
+  "npv": 6543895,
+  "method": "sum of 2 phase NPVs",
+  "cash": [
+   4800000
+  ]
+ },
+ "20-073": {
+  "npv": 4085346,
+  "method": "explicit total",
+  "cash": []
+ },
+ "20-098": {
+  "npv": 20707732,
+  "method": "sum of 3 phase NPVs",
+  "cash": []
+ },
+ "20-099": {
+  "npv": 4800000,
+  "method": "single",
+  "cash": []
+ },
+ "20-120": {
+  "npv": 6543895,
+  "method": "sum of 2 phase NPVs",
+  "cash": [
+   4800000
+  ]
+ },
+ "20-138": {
+  "npv": 994627,
+  "method": "single",
+  "cash": []
+ },
+ "20-139": {
+  "npv": 1687470,
+  "method": "single",
+  "cash": []
+ },
+ "20-143": {
+  "npv": 6543895,
+  "method": "sum of 2 phase NPVs",
+  "cash": [
+   4800000
+  ]
+ },
+ "20-153": {
+  "npv": 7500000,
+  "method": "single",
+  "cash": []
+ },
+ "20-199": {
+  "npv": 20707732,
+  "method": "sum of 3 phase NPVs",
+  "cash": []
+ },
+ "20-245": {
+  "npv": 7500000,
+  "method": "single",
+  "cash": []
+ },
+ "20-310": {
+  "npv": 6800000,
+  "method": "single",
+  "cash": []
+ },
+ "20-345": {
+  "npv": 994627,
+  "method": "single",
+  "cash": []
+ },
+ "20-353": {
+  "npv": 9600000,
+  "method": "explicit total",
+  "cash": []
+ },
+ "20-388": {
+  "npv": 521159,
+  "method": "single",
+  "cash": []
+ },
+ "20-429": {
+  "npv": 527000,
+  "method": "single",
+  "cash": []
+ },
+ "20-461": {
+  "npv": 3403000,
+  "method": "sum of 2 phase NPVs",
+  "cash": [
+   1100000
+  ]
+ },
+ "20-463": {
+  "npv": 3300000,
+  "method": "single",
+  "cash": [
+   4700000
+  ]
+ },
+ "20-487": {
+  "npv": 439000,
+  "method": "explicit total",
+  "cash": []
+ },
+ "20-506": {
+  "npv": 1016267,
+  "method": "single",
+  "cash": []
+ },
+ "20-507": {
+  "npv": 402802,
+  "method": "single",
+  "cash": []
+ },
+ "20-515": {
+  "npv": 113915,
+  "method": "single",
+  "cash": [
+   166720
+  ]
+ },
+ "20-531": {
+  "npv": 200000,
+  "method": "min(npv,cash) \u2014 reversed labels in source",
+  "cash": [
+   200000
+  ]
+ },
+ "20-563": {
+  "npv": 1075000,
+  "method": "single",
+  "cash": []
+ },
+ "20-564": {
+  "npv": 3403000,
+  "method": "sum of 2 phase NPVs",
+  "cash": [
+   1100000
+  ]
+ },
+ "20-565": {
+  "npv": 634000,
+  "method": "single",
+  "cash": []
+ },
+ "21-011": {
+  "npv": 200000,
+  "method": "min(npv,cash) \u2014 reversed labels in source",
+  "cash": [
+   200000
+  ]
+ },
+ "21-044": {
+  "npv": 113915,
+  "method": "single",
+  "cash": [
+   166720
+  ]
+ },
+ "21-059": {
+  "npv": 3300000,
+  "method": "single",
+  "cash": [
+   4700000
+  ]
+ },
+ "21-064": {
+  "npv": 531394,
+  "method": "single",
+  "cash": []
+ },
+ "21-082": {
+  "npv": 641011,
+  "method": "single",
+  "cash": []
+ },
+ "21-086": {
+  "npv": 200000,
+  "method": "min(npv,cash) \u2014 reversed labels in source",
+  "cash": [
+   200000
+  ]
+ },
+ "21-119": {
+  "npv": 347170,
+  "method": "single",
+  "cash": []
+ },
+ "21-120": {
+  "npv": 965989,
+  "method": "single",
+  "cash": []
+ },
+ "21-155": {
+  "npv": 541707,
+  "method": "single",
+  "cash": []
+ },
+ "21-166": {
+  "npv": 7400000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "21-167": {
+  "npv": 377588,
+  "method": "single",
+  "cash": []
+ },
+ "21-189": {
+  "npv": 641011,
+  "method": "single",
+  "cash": []
+ },
+ "21-290": {
+  "npv": 7400000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "21-304": {
+  "npv": 1100000,
+  "method": "single",
+  "cash": [
+   2000000
+  ]
+ },
+ "21-305": {
+  "npv": 1200000,
+  "method": "explicit total",
+  "cash": []
+ },
+ "21-562": {
+  "npv": 1717192,
+  "method": "explicit total",
+  "cash": []
+ },
+ "21-563": {
+  "npv": 3567968,
+  "method": "single",
+  "cash": []
+ },
+ "22-079": {
+  "npv": 2500000,
+  "method": "single",
+  "cash": []
+ },
+ "22-105": {
+  "npv": 3567968,
+  "method": "single",
+  "cash": []
+ },
+ "22-187": {
+  "npv": 641456,
+  "method": "single",
+  "cash": []
+ },
+ "22-215": {
+  "npv": 1200000,
+  "method": "single",
+  "cash": [
+   1400000
+  ]
+ },
+ "22-223": {
+  "npv": 540000,
+  "method": "single",
+  "cash": [
+   851724
+  ]
+ },
+ "22-225": {
+  "npv": 4675000,
+  "method": "sum of 2 phase NPVs",
+  "cash": [
+   1650000,
+   6500000
+  ]
+ },
+ "22-227": {
+  "npv": 670195,
+  "method": "single",
+  "cash": [
+   949490
+  ]
+ },
+ "22-254": {
+  "npv": 6800000,
+  "method": "single",
+  "cash": []
+ },
+ "22-274": {
+  "npv": 540000,
+  "method": "single",
+  "cash": [
+   851724
+  ]
+ },
+ "22-346": {
+  "npv": 1250000,
+  "method": "single",
+  "cash": [
+   1800000
+  ]
+ },
+ "22-350": {
+  "npv": 5724899,
+  "method": "min(npv,cash) \u2014 reversed labels in source",
+  "cash": [
+   5724899
+  ]
+ },
+ "22-357": {
+  "npv": 2900000,
+  "method": "capped max",
+  "cash": []
+ },
+ "22-405": {
+  "npv": 670195,
+  "method": "single",
+  "cash": [
+   949490
+  ]
+ },
+ "22-498": {
+  "npv": 3600000,
+  "method": "single",
+  "cash": [
+   5800000
+  ]
+ },
+ "23-046": {
+  "npv": 2900000,
+  "method": "single",
+  "cash": []
+ },
+ "23-131": {
+  "npv": 5400000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "23-360": {
+  "npv": 4000000,
+  "method": "capped max",
+  "cash": []
+ },
+ "24-063": {
+  "npv": 2372068000000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "24-138": {
+  "npv": 2513009000000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "24-220": {
+  "npv": 2770000,
+  "method": "single",
+  "cash": []
+ },
+ "24-274": {
+  "npv": 2770000,
+  "method": "single",
+  "cash": []
+ },
+ "24-378": {
+  "npv": null,
+  "method": "none",
+  "cash": [
+   9300000
+  ]
+ },
+ "24-536": {
+  "npv": 9100000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "25-030": {
+  "npv": 10000000,
+  "method": "single",
+  "cash": []
+ },
+ "25-163": {
+  "npv": 460000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "25-196": {
+  "npv": null,
+  "method": "none",
+  "cash": [
+   10050000
+  ]
+ },
+ "26-034": {
+  "npv": 439000,
+  "method": "explicit total",
+  "cash": []
+ },
+ "26-097": {
+  "npv": 7560000,
+  "method": "sum of 2 phase NPVs",
+  "cash": []
+ },
+ "26-169": {
+  "npv": 1750000,
+  "method": "single",
+  "cash": []
+ },
+ "26-182": {
+  "npv": 1750000,
+  "method": "single",
+  "cash": []
+ },
+ "26-229": {
+  "npv": 1750000,
+  "method": "single",
+  "cash": []
+ }
+}
