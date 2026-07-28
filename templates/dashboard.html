@@ -198,12 +198,12 @@
 
   <div class="actuals" id="actuals">
     <div class="act-head">
-      <h2>What the city actually collected &amp; paid — Iowa Dept. of Management filings</h2>
+      <h2>What the city actually generated &amp; paid — Iowa Dept. of Management filings</h2>
       <p class="note" id="act-sub"></p>
     </div>
     <div class="charts">
       <div class="panel">
-        <h2>Actual TIF collected &amp; rebated to developers, by fiscal year</h2>
+        <h2>Actual TIF generated &amp; rebated to developers, by fiscal year</h2>
         <p class="note">State annual urban-renewal filings · FY2012–2024 (actuals lag approvals)</p>
         <svg id="actualchart" role="img" aria-label="Actual TIF revenue and rebates by fiscal year"></svg>
         <div id="actlegend" class="legend"></div>
@@ -293,7 +293,7 @@ const tiles = [
 ];
 const IM = (DATA.iowa || {}).meta;
 if (IM) tiles.push(
-  [fmtM(IM.total_tif_revenue), "actual TIF collected", "FY" + IM.fy_range[0] + "–" + IM.fy_range[1] + " · Iowa DOM filings"],
+  [fmtM(IM.total_tif_revenue), "actual TIF generated", "FY" + IM.fy_range[0] + "–" + IM.fy_range[1] + " · Iowa DOM filings"],
   [fmtM(IM.total_rebated_to_developers), "actually rebated to developers", "FY" + IM.fy_range[0] + "–" + IM.fy_range[1] + " · state actuals"]
 );
 document.getElementById("tiles").innerHTML = tiles.map(t =>
@@ -384,7 +384,7 @@ function hideTip() { tip.style.display = "none"; }
   if (!annual.length) { document.getElementById("actuals").style.display = "none"; return; }
 
   document.getElementById("act-sub").innerHTML =
-    `Over FY${m.fy_range[0]}–${m.fy_range[1]} the city collected <b>${fmtFull(m.total_tif_revenue)}</b> in TIF `
+    `Over FY${m.fy_range[0]}–${m.fy_range[1]} the city generated <b>${fmtFull(m.total_tif_revenue)}</b> in TIF `
     + `increment and rebated <b>${fmtFull(m.total_rebated_to_developers)}</b> back to developers — `
     + `close to the ${fmtM(DATA.stats.incPaidTotal)} our project-level staff tables projected, an independent cross-check. `
     + `Source: ${m.source}. Rebates lag approvals by years, so recent deals show little actual payout yet.`;
@@ -406,14 +406,14 @@ function hideTip() { tip.style.display = "none"; }
     const cx = left + gw * (i + 0.5);
     const bw = Math.min(9, gw * 0.32);
     const hR = plotH * a.tif_revenue / max, hB = plotH * a.rebated_to_developers / max;
-    g += `<rect class="bar" x="${cx - bw - 1}" y="${top + plotH - hR}" width="${bw}" height="${hR}" rx="2"><title>FY${a.fy}: collected ${fmtFull(a.tif_revenue)}</title></rect>`;
+    g += `<rect class="bar" x="${cx - bw - 1}" y="${top + plotH - hR}" width="${bw}" height="${hR}" rx="2"><title>FY${a.fy}: generated ${fmtFull(a.tif_revenue)}</title></rect>`;
     g += `<rect class="bar2" x="${cx + 1}" y="${top + plotH - hB}" width="${bw}" height="${hB}" rx="2"><title>FY${a.fy}: rebated ${fmtFull(a.rebated_to_developers)}</title></rect>`;
     if (i % 2 === 0 || i === annual.length - 1)
       g += `<text class="axis-t" x="${cx}" y="${H-8}" text-anchor="middle">'${String(a.fy).slice(2)}</text>`;
   });
   svg.innerHTML = g;
   document.getElementById("actlegend").innerHTML =
-    `<span><i style="background:var(--data)"></i>TIF collected</span>`
+    `<span><i style="background:var(--data)"></i>TIF generated</span>`
     + `<span><i style="background:var(--good-ink)"></i>Rebated to developers</span>`;
 
   /* top recipients horizontal bars */

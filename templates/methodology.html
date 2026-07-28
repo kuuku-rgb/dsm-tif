@@ -83,7 +83,7 @@
         <td>Incentive amount &amp; structure, total project cost, urban-renewal area, and the projected
         taxes-with-vs-without-project tables</td><td>The money</td></tr>
       <tr><td><strong>Iowa Dept. of Management</strong><br><span style="color:var(--ink-3);font-size:12px">urban-renewal filings</span></td>
-        <td>TIF actually collected and actually rebated, per year, per area</td><td>Independent actuals</td></tr>
+        <td>TIF actually generated and actually rebated, per year, per area</td><td>Independent actuals</td></tr>
       <tr><td><strong>Polk County Assessor</strong><br><span style="color:var(--ink-3);font-size:12px">parcel roll + geometry</span></td>
         <td>Current assessed value, year built, TIF-district tag, parcel location</td><td>What exists on the ground</td></tr>
       <tr><td><strong>City of Des Moines</strong><br><span style="color:var(--ink-3);font-size:12px">neighborhood boundaries</span></td>
@@ -222,7 +222,7 @@ document.getElementById("v1p").innerHTML =
   `Summing the incentives projected in the staff reports gives <strong>${fmtM(M.incPaidTotal)}</strong>. `
   + `Independently, Iowa's urban-renewal filings show Des Moines actually rebated `
   + `<strong>${fmtM(M.iowa_rebated)}</strong> to developers over FY${M.iowa_fy0}–${M.iowa_fy1} `
-  + `(against ${fmtM(M.iowa_collected)} of increment collected). Two unrelated methods, ~2% apart.`;
+  + `(against ${fmtM(M.iowa_collected)} of increment generated). Two unrelated methods, ~2% apart.`;
 
 const xwAll = M.crosswalk === M.crosswalk_total;
 document.getElementById("v2").textContent =
